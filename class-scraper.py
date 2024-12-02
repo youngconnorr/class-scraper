@@ -118,12 +118,6 @@ def export_to_csv(courses, filename):
 
 def main():
     
-    url="https://courses.landfood.ubc.ca/"
-
-    html_content = requests.get(url).text
-
-    soup = BeautifulSoup(html_content, "lxml")
-
     valid_classes = [
     'AANB',
     'AGEC',
@@ -142,18 +136,33 @@ def main():
     'SOIL'
     ]
     
-    url2 = "https://vancouver.calendar.ubc.ca/faculties-colleges-and-schools/faculty-land-and-food-systems/bsc-food-nutrition-and-health-fnh"
-    
-    html_content = requests.get(url2).text
+    lfs_courses_term_1="https://courses.landfood.ubc.ca/?term=2024-25-winter-term-1-ubc-v&subject=All"
+    lfs_courses_term_2="https://courses.landfood.ubc.ca/?term=2024-25-winter-term-2-ubc-v&subject=All"
 
-    soup = BeautifulSoup(html_content, "lxml")
+    # grab HTML content using requests
+    html_content_1 = requests.get(lfs_courses_term_1).text
+    html_content_2 = requests.get(lfs_courses_term_2).text
+
+    # turn into soup
+    term_1_soup = BeautifulSoup(html_content_1, "lxml")
+    term_2_soup = BeautifulSoup(html_content_2, "lxml")
+
+    # get class list
+    found_classes_1 = get_classes(valid_classes, term_1_soup)
+    found_classes_2 = get_classes(valid_classes, term_2_soup)
+    found_classes_1.extend(found_classes_2)
+
+    total_class = set()
+    total_class.add(tuple(found_classes_1))
     
-    # found_classes = get_classes(valid_classes, soup)
+    url2 = "https://vancouver.calendar.ubc.ca/faculties-colleges-and-schools/faculty-land-and-food-systems/bsc-food-nutrition-and-health-fnh"
+    html_content = requests.get(url2).text
+    soup = BeautifulSoup(html_content, "lxml")
+    # print(get_majors(soup))
     
     # majors = [a.text.strip() for a in soup.select('ol.list-buttons > li > a')[4:]]
     # print(majors)
     
-    print(get_majors(soup))
     
     
     # export_to_csv(found_classes, 'extracted_courses.csv')
