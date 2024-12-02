@@ -2,6 +2,24 @@ from bs4 import BeautifulSoup
 import requests
 import csv
 
+valid_classes = [
+    'AANB',
+    'AGEC',
+    'ANSC',
+    'APBI',
+    'AQUA',
+    'FNH',
+    'FOOD',
+    'FRE',
+    'GRS',
+    'HUNU',
+    'LFS',
+    'LFS Student Services',
+    'LWS',
+    'PLNT',
+    'SOIL'
+    ]
+
 '''
 
 Get majors 
@@ -56,7 +74,7 @@ def parse_classes(code: BeautifulSoup, valid_classes: list):
     return courseList
     
 
-def get_classes(valid_classes: list, soup: BeautifulSoup):
+def get_all_classes(valid_classes: list, soup: BeautifulSoup) -> list:
     
     courseSet = set()
     
@@ -79,21 +97,100 @@ def parse_majors(cell: BeautifulSoup):
     return major_set
         
 
-def get_majors(soup: BeautifulSoup):
+def get_specialization_names(soup: BeautifulSoup) -> list:
     
-    majorSet = set()
+    specialtySet = set()
     
     
     for cell in soup.select('ol.list-buttons > li > a'):
-        majorSet.update(parse_majors(cell))
+        specialtySet.update(parse_majors(cell))
         
-    if majorSet:
-        return list(majorSet)
+    if specialtySet:
+        return list(specialtySet)
     else:
         return -1
 
+def get_specialization_classes(soup: BeautifulSoup) -> list:
 
-def export_to_csv(courses, filename):
+    classList = []
+
+    for cell in soup.select('ol.list-buttons > li > a'):
+        specialization_content = cell.get('href')
+        classSoup = get_soup(specialization_content)
+
+        classList.append(get_all_classes(valid_classes, classSoup))
+
+    return classList # returns each majors classlist
+
+
+
+
+def find_major_courses(lfs_soup: BeautifulSoup):
+    major_links = lfs_soup.select('ol.list-buttons > li > a')
+
+    major_content = {}
+
+    '''
+    format:
+
+    major_content = {
+        "Applied Biology": {
+            "Applied Animal Biology": ["Course 1", "Course 2"],
+            "Sustainable Agriculture and Environment": ["Course 1", "Course 2"]
+        },
+        "Food, Nutrition and Health": {
+            "Dietetics": ["Course 1", "Course 2"],
+            "Food Market Analysis": ["Course 1", "Course 2"],
+            "Food Science": ["Course 1", "Course 2"],
+            "Nutritional Sciences": ["Course 1", "Course 2"],
+            "Food and Nutritional Sciences": ["Course 1", "Course 2"],
+            "Food, Nutrition and Health": ["Course 1", "Course 2"]
+        }
+    }
+
+    
+    '''
+
+    major_names = []
+
+    for link in major_links:
+        if "B.Sc" not in link.get_text():
+            continue
+            
+        major_name = link.get_text().strip()
+
+        major_content[major_name] = {}
+
+
+        if link.get('href'):
+            link_content = get_soup(f"https://vancouver.calendar.ubc.ca{link.get('href')}")
+            # get major and href and then soup, and then get all courses
+            # save major names as well into array as first item so it can be called with courses[0]
+            specialization_names = get_specialization_names(link_content) # have the individual majors now
+
+            # now all you're missing is classes
+            for specialty in specialization_names:
+                major_content[major_name][specialty] = []
+
+            # get classes (right now it gets the classes for EVERY MAJOR and puts it into one list)
+            # figure out how to get it so it gets each major individually so you can easily store it into a list
+            classes = get_specialization_classes(link_content)
+                
+for cell in soup.select('ol.list-buttons > li > a'):
+        specialtySet.update(parse_majors(cell))
+
+
+
+
+
+def get_soup(link: str):
+    html_content = requests.get(link).text
+    soup = BeautifulSoup(html_content, "html.parser")
+
+    return soup
+
+
+def export_to_csv(courses: list, filename: str):
     """
     Export courses to a CSV file
     
@@ -113,7 +210,7 @@ def export_to_csv(courses, filename):
         
         print(f"Courses exported to {filename} successfully!")
     except IOError as e:
-        print(f"Error exporting to CSV: {e}")                 
+        print(f"Error exporting to CSV: {e}")    
 
 
 def main():
@@ -135,30 +232,45 @@ def main():
     'PLNT',
     'SOIL'
     ]
+
     
-    lfs_courses_term_1="https://courses.landfood.ubc.ca/?term=2024-25-winter-term-1-ubc-v&subject=All"
-    lfs_courses_term_2="https://courses.landfood.ubc.ca/?term=2024-25-winter-term-2-ubc-v&subject=All"
-
-    # grab HTML content using requests
-    html_content_1 = requests.get(lfs_courses_term_1).text
-    html_content_2 = requests.get(lfs_courses_term_2).text
-
-    # turn into soup
-    term_1_soup = BeautifulSoup(html_content_1, "lxml")
-    term_2_soup = BeautifulSoup(html_content_2, "lxml")
+    lfs_soup_term_1= get_soup("https://courses.landfood.ubc.ca/?term=2024-25-winter-term-1-ubc-v&subject=All")
+    lfs_soup_term_2= get_soup("https://courses.landfood.ubc.ca/?term=2024-25-winter-term-2-ubc-v&subject=All")
 
     # get class list
-    found_classes_1 = get_classes(valid_classes, term_1_soup)
-    found_classes_2 = get_classes(valid_classes, term_2_soup)
+    found_classes_1 = get_all_classes(valid_classes, lfs_soup_term_1)
+    found_classes_2 = get_all_classes(valid_classes, lfs_soup_term_2)
+
     found_classes_1.extend(found_classes_2)
 
     total_class = set()
     total_class.add(tuple(found_classes_1))
+
+    print(total_class)
+    '''
+    Applied Biology (formerly Agroecology)
+        Applied Animal Biology
+        Sustainable Agriculture and Environment
+    Food, Nutrition and Health
+        Dietetics
+        Food Market Analysis
+        Food Science
+        Nutritional Sciences
+        Food and Nutritional Sciences
+        Food, Nutrition and Health
+    Global Resource Systems
     
-    url2 = "https://vancouver.calendar.ubc.ca/faculties-colleges-and-schools/faculty-land-and-food-systems/bsc-food-nutrition-and-health-fnh"
+    scrape every major each of their courses and then compare
+    inefficient but also more efficient than copy and paste
+    '''
+
+
+    url2 = "https://vancouver.calendar.ubc.ca/faculties-colleges-and-schools/faculty-land-and-food-systems/bsc-applied-biology-apbi"
     html_content = requests.get(url2).text
     soup = BeautifulSoup(html_content, "lxml")
-    # print(get_majors(soup))
+    print(get_majors(soup))
+    for i in get_majors(soup):
+        print(i.get('href'))
     
     # majors = [a.text.strip() for a in soup.select('ol.list-buttons > li > a')[4:]]
     # print(majors)
