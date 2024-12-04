@@ -87,17 +87,17 @@ def get_all_classes(valid_classes: list, soup: BeautifulSoup) -> list:
     return list(courseSet)
 
 def parse_majors(cell: BeautifulSoup):
-    cell_text = cell.get_text(strip=True)
+    cell_text = cell.get_text().strip()
     major_set = set()
     
-    if "Major" in cell_text:
+    if "Major" in cell_text and len(cell_text) < 50:
         # print(cell_text)
-        major_set.add(cell_text)
+        major_set.add(cell) # add the original (with href)
     
     return major_set
         
 
-def get_specialization_names(soup: BeautifulSoup) -> list:
+def get_specialization(soup: BeautifulSoup) -> list:
     
     specialtySet = set()
     
@@ -108,7 +108,8 @@ def get_specialization_names(soup: BeautifulSoup) -> list:
     if specialtySet:
         return list(specialtySet)
     else:
-        return -1
+        return []
+
 
 def get_specialization_classes(soup: BeautifulSoup) -> list:
 
@@ -126,10 +127,6 @@ def get_specialization_classes(soup: BeautifulSoup) -> list:
 
 
 def find_major_courses(lfs_soup: BeautifulSoup):
-    major_links = lfs_soup.select('ol.list-buttons > li > a')
-
-    major_content = {}
-
     '''
     format:
 
@@ -150,37 +147,77 @@ def find_major_courses(lfs_soup: BeautifulSoup):
 
     
     '''
-
-    major_names = []
+    major_links = lfs_soup.select('ol.list-buttons > li > a')
+    major_content = {}
 
     for link in major_links:
         if "B.Sc" not in link.get_text():
             continue
-            
+
         major_name = link.get_text().strip()
-
         major_content[major_name] = {}
-
 
         if link.get('href'):
             link_content = get_soup(f"https://vancouver.calendar.ubc.ca{link.get('href')}")
             # get major and href and then soup, and then get all courses
             # save major names as well into array as first item so it can be called with courses[0]
-            specialization_names = get_specialization_names(link_content) # have the individual majors now
+            specialization_links = get_specialization(link_content) # have the individual majors now
 
+            # print(specialization_names)
             # now all you're missing is classes
-            for specialty in specialization_names:
-                major_content[major_name][specialty] = []
+            for specialty in specialization_links:
+                
+                # get classes for specialty
+                if specialty.get('href'):
+                    s_soup = get_soup(f"https://vancouver.calendar.ubc.ca{specialty.get('href')}")
+                    s_classes = get_all_classes(valid_classes, s_soup)
+                
+                # get name of specialty
+                specialty_name = specialty.get_text().strip()
 
+                major_content[major_name][specialty_name] = s_classes
+
+        
+    print(major_content)
             # get classes (right now it gets the classes for EVERY MAJOR and puts it into one list)
             # figure out how to get it so it gets each major individually so you can easily store it into a list
-            classes = get_specialization_classes(link_content)
-                
-for cell in soup.select('ol.list-buttons > li > a'):
-        specialtySet.update(parse_majors(cell))
+            # classes = get_specialization_classes(link_content)
+    # print(major_content)  
+# for cell in soup.select('ol.list-buttons > li > a'):
+#         specialtySet.update(parse_majors(cell))
 
 
+{
+    
+'B.Sc. in Applied Biology (APBI)': 
+ {
+     'Applied Animal Biology Major': [], 'Applied Plant and Soil Science Major': [], 
+     'Food and Environment Major': [], 
+     'Sustainable Agriculture and Environment Major': []
+ }, 
 
+'B.Sc. in Food, Nutrition, and Health (FNH)': 
+ {
+    'Food, Nutrition, and Health Major': [], 
+    'Food and Nutritional Sciences Double Major': [], 
+    'Nutritional Sciences Major': [], 
+    'Food Market Analysis Major': [], 
+    'Dietetics Major': [], 
+    'Food Science Major': []
+  }, 
+
+ 'B.Sc. in Food and Resource Economics (BSFE)': 
+ {
+     
+ }, 
+ 
+ 'B.Sc. in Global Resource Systems (GRS)': 
+ {
+     
+ }
+ 
+ 
+ }
 
 
 def get_soup(link: str):
@@ -234,19 +271,19 @@ def main():
     ]
 
     
-    lfs_soup_term_1= get_soup("https://courses.landfood.ubc.ca/?term=2024-25-winter-term-1-ubc-v&subject=All")
-    lfs_soup_term_2= get_soup("https://courses.landfood.ubc.ca/?term=2024-25-winter-term-2-ubc-v&subject=All")
+    # lfs_soup_term_1= get_soup("https://courses.landfood.ubc.ca/?term=2024-25-winter-term-1-ubc-v&subject=All")
+    # lfs_soup_term_2= get_soup("https://courses.landfood.ubc.ca/?term=2024-25-winter-term-2-ubc-v&subject=All")
 
-    # get class list
-    found_classes_1 = get_all_classes(valid_classes, lfs_soup_term_1)
-    found_classes_2 = get_all_classes(valid_classes, lfs_soup_term_2)
+    # # get class list
+    # found_classes_1 = get_all_classes(valid_classes, lfs_soup_term_1)
+    # found_classes_2 = get_all_classes(valid_classes, lfs_soup_term_2)
 
-    found_classes_1.extend(found_classes_2)
+    # found_classes_1.extend(found_classes_2)
 
-    total_class = set()
-    total_class.add(tuple(found_classes_1))
+    # total_class = set()
+    # total_class.add(tuple(found_classes_1))
 
-    print(total_class)
+    # print(total_class)
     '''
     Applied Biology (formerly Agroecology)
         Applied Animal Biology
@@ -265,18 +302,18 @@ def main():
     '''
 
 
-    url2 = "https://vancouver.calendar.ubc.ca/faculties-colleges-and-schools/faculty-land-and-food-systems/bsc-applied-biology-apbi"
-    html_content = requests.get(url2).text
-    soup = BeautifulSoup(html_content, "lxml")
-    print(get_majors(soup))
-    for i in get_majors(soup):
-        print(i.get('href'))
+    # url2 = "https://vancouver.calendar.ubc.ca/faculties-colleges-and-schools/faculty-land-and-food-systems/bsc-applied-biology-apbi"
+    # html_content = requests.get(url2).text
+    # soup = BeautifulSoup(html_content, "lxml")
+    # print(get_majors(soup))
+    # for i in get_majors(soup):
+    #     print(i.get('href'))
     
     # majors = [a.text.strip() for a in soup.select('ol.list-buttons > li > a')[4:]]
     # print(majors)
-    
-    
-    
+
+    soup = get_soup("https://vancouver.calendar.ubc.ca/faculties-colleges-and-schools/faculty-land-and-food-systems")
+    find_major_courses(soup)
     # export_to_csv(found_classes, 'extracted_courses.csv')
 
                             
