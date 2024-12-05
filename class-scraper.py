@@ -6,12 +6,19 @@ import csv
 '''
 TODO: PROBLEM WITH FINDING ALL COURSES... LIKE APBI 499, IT JUST DOESN'T EXIST??
 
+TODO:
+Get majors 
+get classes in majors and put in list
 
-
+iterate through all class list and check if in major_classes:
+    if in then yes else no
+    
+list of majors -> majors -> classes -> if in all_classes Y else N
+list of majors -> majors -> classes -> if in restricted elective: R
 
 '''
 
-valid_classes = [
+VALID_CLASSES = [
     'AANB',
     'AGEC',
     'ANSC',
@@ -29,67 +36,63 @@ valid_classes = [
     'SOIL'
     ]
 
+
+TERM1_CLASSES_LINK = "https://courses.landfood.ubc.ca/?term=2024-25-winter-term-1-ubc-v&subject=All"
+TERM2_CLASSES_LINK = "https://courses.landfood.ubc.ca/?term=2024-25-winter-term-2-ubc-v&subject=All"
+PARENT_FACULTY_LINK = "https://vancouver.calendar.ubc.ca/faculties-colleges-and-schools/faculty-land-and-food-systems"
+
 major_content = {}
-
-'''
-
-Get majors 
-get classes in majors and put in list
-
-iterate through all class list and check if in major_classes:
-    if in then yes else no
-    
-list of majors -> majors -> classes -> if in all_classes Y else N
-list of majors -> majors -> classes -> if in restricted elective: R
-
-
-'''
-
-
 
 
 def main():
 
-    '''
-    Applied Biology (formerly Agroecology)
-        Applied Animal Biology
-        Sustainable Agriculture and Environment
-    Food, Nutrition and Health
-        Dietetics
-        Food Market Analysis
-        Food Science
-        Nutritional Sciences
-        Food and Nutritional Sciences
-        Food, Nutrition and Health
-    Global Resource Systems
-    
-    scrape every major each of their courses and then compare
-    inefficient but also more efficient than copy and paste
-    '''
-    lfs_soup_term_1= get_soup("https://courses.landfood.ubc.ca/?term=2024-25-winter-term-1-ubc-v&subject=All")
-    lfs_soup_term_2= get_soup("https://courses.landfood.ubc.ca/?term=2024-25-winter-term-2-ubc-v&subject=All")
-    faculty_classes = get_all_faculty_classes(lfs_soup_term_1)
-    faculty_term_2 = get_all_faculty_classes(lfs_soup_term_2)
-    faculty_classes.extend(faculty_term_2)
-    total_classes = set(faculty_classes)
-    # print(total_classes)
+    faculty_term_1 = get_faculty_classes(TERM1_CLASSES_LINK)
+    faculty_term_2 = get_faculty_classes(TERM2_CLASSES_LINK)
+    faculty_term_1.extend(faculty_term_2)
+    total_classes = set(faculty_term_1)
 
-    faculty_soup = get_soup("https://vancouver.calendar.ubc.ca/faculties-colleges-and-schools/faculty-land-and-food-systems")
-    find_major_courses(faculty_soup)
+    find_major_courses(PARENT_FACULTY_LINK)
 
     # TODO: implement to check whether class is required or restricted
-    check_required_classes_or_restricted(major_content, faculty_classes)
-    
-    export_to_csv(total_classes, 'extracted_courses.csv')
+    check_required_classes_or_restricted(major_content, total_classes)
 
-def get_all_faculty_classes(soup: BeautifulSoup) -> list:
+    # export_to_csv(total_classes, 'extracted_courses.csv')
 
+def check_required_classes_or_restricted(major_content: dict, faculty_classes: set, restricted_classes: set):
+    return -1
+    # how to store the new data? honestly just simple list
+    # - 0 index is name of major
+    # - rest are Y, N, or R
+    # do same hashmap structure, but replace the list with Y,N,R
+
+    # for m in major_content:
+    #     for s in m:
+
+    #         s_classes = []
+
+    #         for c in s:
+    #             if c in faculty_classes:
+    #                 s_classes.append("Y")
+    #             else if 
+            
+
+                
+
+
+
+
+    # so create new list, and then swap the old list with the new list and you're done
+
+def get_faculty_classes(link: str) -> list:
+
+    soup = get_soup(link)
     # get class list
-    all_classes = get_all_classes(valid_classes, soup)
+    all_classes = get_all_classes(VALID_CLASSES, soup)
 
     return all_classes
 
-def find_major_courses(lfs_soup: BeautifulSoup):
+
+def find_major_courses(link: str):
     '''
     format:
 
@@ -108,6 +111,7 @@ def find_major_courses(lfs_soup: BeautifulSoup):
         }
     }
     '''
+    lfs_soup = get_soup(link)
     links_to_majors = lfs_soup.select('ol.list-buttons > li > a')
 
     for major in links_to_majors:
@@ -127,7 +131,7 @@ def find_major_courses(lfs_soup: BeautifulSoup):
                 # get classes for specialty
                 if specialty.get('href'):
                     s_soup = get_soup(f"https://vancouver.calendar.ubc.ca{specialty.get('href')}")
-                    s_classes = get_all_classes(valid_classes, s_soup)
+                    s_classes = get_all_classes(VALID_CLASSES, s_soup)
                 
                 # get name of specialty
                 specialty_name = specialty.get_text().strip()
