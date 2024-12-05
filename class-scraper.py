@@ -47,17 +47,25 @@ major_content = {}
 
 def main():
 
-    faculty_term_1 = get_faculty_classes(TERM1_CLASSES_LINK)
-    faculty_term_2 = get_faculty_classes(TERM2_CLASSES_LINK)
-    faculty_term_1.extend(faculty_term_2)
-    total_classes = set(faculty_term_1)
+    # faculty_term_1 = get_faculty_classes(TERM1_CLASSES_LINK)
+    # faculty_term_2 = get_faculty_classes(TERM2_CLASSES_LINK)
+    # faculty_term_1.extend(faculty_term_2)
+    # total_classes = set(faculty_term_1)
 
     restricted_courses = get_restricted_courses(VALID_CLASSES, RESTRICTED_COURSES_LINK)
+    print(restricted_courses)
+    
+    #  USE THIS CONDITION TO SEE IF IN RESTRICTED!
+    if any("APBI" in course for course in restricted_courses):
+        print("true")
+    else:
+        print("false")
 
-    find_major_courses(PARENT_FACULTY_LINK)
+        
+    # find_major_courses(PARENT_FACULTY_LINK)
 
     # TODO: implement to check whether class is required or restricted
-    check_required_classes_or_restricted(major_content, total_classes, restricted_courses)
+    # check_required_classes_or_restricted(major_content, total_classes, restricted_courses)
 
     # export_to_csv(total_classes, 'extracted_courses.csv')
 
@@ -67,17 +75,34 @@ def check_required_classes_or_restricted(major_content: dict, faculty_classes: s
     # - rest are Y, N, or R
     # do same hashmap structure, but replace the list with Y,N,R
 
-    """find restricted by """
+    """find restricted by seperating programs,  """
+    """need to compare list of ALL courses to cur_classes"""
+
+    '''
+    restricted courses are a list of courses that belong to its major
+
+    we compare the restricted courses of the specific program to all the courses and then add Rs
+
+    how do we do this?
+    
+    parse through all of the courses
+
+    and see
+
+    if course is in faculty classes add Y
+    elif course is in restricted class add R
+    neither add N
+    '''
 
     for major, specialization in major_content.items():
         for specialization, classes in specialization.items():
 
             s_classes = []
 
-            for c in classes:
-                if c in faculty_classes:
+            for c in faculty_classes:
+                if c in classes:
                     s_classes.append("Y")
-                elif c in restricted_classes:
+                elif c in restricted_classes: #this needs to be program specific becuase its checking EVERYTHING right now
                     s_classes.append("R")
                 else:
                     s_classes.append("N")
