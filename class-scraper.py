@@ -40,6 +40,7 @@ VALID_CLASSES = [
 TERM1_CLASSES_LINK = "https://courses.landfood.ubc.ca/?term=2024-25-winter-term-1-ubc-v&subject=All"
 TERM2_CLASSES_LINK = "https://courses.landfood.ubc.ca/?term=2024-25-winter-term-2-ubc-v&subject=All"
 PARENT_FACULTY_LINK = "https://vancouver.calendar.ubc.ca/faculties-colleges-and-schools/faculty-land-and-food-systems"
+RESTRICTED_COURSES_LINK = "https://www.landfood.ubc.ca/current/undergraduate/degree-planning/restricted-elective/"
 
 major_content = {}
 
@@ -51,37 +52,71 @@ def main():
     faculty_term_1.extend(faculty_term_2)
     total_classes = set(faculty_term_1)
 
+    restricted_courses = get_restricted_courses(VALID_CLASSES, RESTRICTED_COURSES_LINK)
+
     find_major_courses(PARENT_FACULTY_LINK)
 
     # TODO: implement to check whether class is required or restricted
-    check_required_classes_or_restricted(major_content, total_classes)
+    check_required_classes_or_restricted(major_content, total_classes, restricted_courses)
 
     # export_to_csv(total_classes, 'extracted_courses.csv')
 
 def check_required_classes_or_restricted(major_content: dict, faculty_classes: set, restricted_classes: set):
-    return -1
     # how to store the new data? honestly just simple list
     # - 0 index is name of major
     # - rest are Y, N, or R
     # do same hashmap structure, but replace the list with Y,N,R
 
-    # for m in major_content:
-    #     for s in m:
+    """find restricted by """
 
-    #         s_classes = []
+    for major, specialization in major_content.items():
+        for specialization, classes in specialization.items():
 
-    #         for c in s:
-    #             if c in faculty_classes:
-    #                 s_classes.append("Y")
-    #             else if 
-            
+            s_classes = []
 
-                
+            for c in classes:
+                if c in faculty_classes:
+                    s_classes.append("Y")
+                elif c in restricted_classes:
+                    s_classes.append("R")
+                else:
+                    s_classes.append("N")
 
-
+            major_content[major][specialization] = s_classes
+    
+    print(major_content)
 
 
     # so create new list, and then swap the old list with the new list and you're done
+
+def get_restricted_courses(valid_classes: list, link: str):
+    """Retrieve all restricted courses"""
+    def parse_restricted(code, valid_classes: list):
+        """Parse through the different formatting for restricted courses"""
+        cell_text = code.get_text().strip()
+        courseList = set()
+
+        for c in valid_classes:
+            if c in cell_text:
+                courseList.add(cell_text)
+        
+        return courseList
+
+    soup = get_soup(link)
+
+    r_course_set = set()
+    
+    for code in soup.find_all(['td', 'li']):
+        r_course_set.update(parse_restricted(code, valid_classes))
+    
+    # print(r_course_set)
+            
+    return r_course_set
+
+
+        
+
+
 
 def get_faculty_classes(link: str) -> list:
 
@@ -160,38 +195,34 @@ def check_if_code_done(cell_text: str, cur_class: str):
         cur_letter += 1
         
     return cur_course
-    
 
-def parse_classes(code: BeautifulSoup, valid_classes: list):
-    cell_text = code.get_text().strip()
-
-    courseList = set()
-
-    for c in valid_classes:
-        if c in cell_text and len(cell_text) < 100:
-            check_if_course_num = cell_text.index(c) + 8
-            if (check_if_course_num < len(cell_text)):
-                
-                if cell_text[check_if_course_num].isnumeric():
-                    
-                    course = check_if_code_done(cell_text, c)
-                    
-                    courseList.add(course)
-    
-    return courseList
     
 
 def get_all_classes(valid_classes: list, soup: BeautifulSoup) -> list:
-    
-    courseSet = set()
-    
-    for code in soup.find_all("td"):
-        courseSet.update(parse_classes(code, valid_classes))
+    """Retrieve all classes from a given soup"""
 
-    for code in soup.find_all("li"):
-        courseSet.update(parse_classes(code, valid_classes))
+    def parse_classes(code, valid_classes: list):
+        """Perform checks on a given piece of HTML to see if its a valid class"""
+        cell_text = code.get_text().strip()
+        courseList = set()
+
+        for c in valid_classes:
+            if c in cell_text and len(cell_text) < 100:
+                check_if_course_num = cell_text.index(c) + 8 # 8 is to see if there is a course number 8 indexes away
+                if (check_if_course_num < len(cell_text)):
+                    if cell_text[check_if_course_num].isnumeric():
+                        course = check_if_code_done(cell_text, c)
+                        courseList.add(course)
+        
+        return courseList
+    
+
+    all_courses = set()
+    
+    for code in soup.find_all(['td', 'li']):
+        all_courses.update(parse_classes(code, valid_classes))
             
-    return list(courseSet)
+    return list(all_courses)
 
 def parse_majors(cell: BeautifulSoup):
     cell_text = cell.get_text().strip()
