@@ -47,29 +47,29 @@ major_content = {}
 
 def main():
 
-    # faculty_term_1 = get_faculty_classes(TERM1_CLASSES_LINK)
-    # faculty_term_2 = get_faculty_classes(TERM2_CLASSES_LINK)
-    # faculty_term_1.extend(faculty_term_2)
-    # total_classes = set(faculty_term_1)
+    faculty_term_1 = get_faculty_classes(TERM1_CLASSES_LINK)
+    faculty_term_2 = get_faculty_classes(TERM2_CLASSES_LINK)
+    faculty_term_1.extend(faculty_term_2)
+    total_classes = set(faculty_term_1)
 
     restricted_courses = get_restricted_courses(VALID_CLASSES, RESTRICTED_COURSES_LINK)
-    print(restricted_courses)
+    # print(restricted_courses)
     
     #  USE THIS CONDITION TO SEE IF IN RESTRICTED!
-    if any("APBI" in course for course in restricted_courses):
-        print("true")
-    else:
-        print("false")
+    # if any("APBI" in course for course in restricted_courses):
+    #     print("true")
+    # else:
+    #     print("false")
 
         
-    # find_major_courses(PARENT_FACULTY_LINK)
+    find_major_courses(PARENT_FACULTY_LINK)
 
     # TODO: implement to check whether class is required or restricted
-    # check_required_classes_or_restricted(major_content, total_classes, restricted_courses)
+    check_required_classes_or_restricted(major_content, total_classes, restricted_courses)
 
     # export_to_csv(total_classes, 'extracted_courses.csv')
 
-def check_required_classes_or_restricted(major_content: dict, faculty_classes: set, restricted_classes: set):
+def check_required_classes_or_restricted(major_content: dict, faculty_classes: set, restricted_classes: dict):
     # how to store the new data? honestly just simple list
     # - 0 index is name of major
     # - rest are Y, N, or R
@@ -99,6 +99,7 @@ def check_required_classes_or_restricted(major_content: dict, faculty_classes: s
 
             s_classes = []
 
+            """right now im parsing through the actually list of all the classes, but i want to compare to the restricted classes, how do i do this? I want to get each specialization and get that part of the hashmap, """
             for c in faculty_classes:
                 if c in classes:
                     s_classes.append("Y")
@@ -119,25 +120,31 @@ def get_restricted_courses(valid_classes: list, link: str):
     def parse_restricted(code, valid_classes: list):
         """Parse through the different formatting for restricted courses"""
         cell_text = code.get_text().strip()
-        courseList = set()
+        courseSet = set()
 
         for c in valid_classes:
             if c in cell_text:
-                courseList.add(cell_text)
-        
-        return courseList
+                courseSet.add(cell_text)
+        return courseSet
 
     soup = get_soup(link)
 
-    r_course_set = set()
-    
-    for code in soup.find_all(['td', 'li']):
-        r_course_set.update(parse_restricted(code, valid_classes))
-    
-    # print(r_course_set)
-            
-    return r_course_set
+    r_dict = {}
+    # split up by accordion-shortcode accordion
+    for major_group in soup.find_all("div", class_="accordion-group"):
 
+        major_name = major_group.find("a", class_="accordion-toggle")
+        if major_name:
+            temp_name = major_name.text.strip()
+            r_dict[temp_name] = set()
+        else:
+            continue
+        
+        for code in major_group.find_all('li'):
+            r_dict[temp_name].update(parse_restricted(code, valid_classes))
+
+    return r_dict
+            
 
         
 
