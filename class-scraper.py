@@ -96,6 +96,27 @@ def check_required_classes_or_restricted(major_content: dict, faculty_classes: s
 
     for major, specialization in major_content.items():
         for specialization, classes in specialization.items():
+            for r_program in restricted_classes:
+                # Check if specialization matches restricted program criteria
+                is_base_match = specialization[:-6] in r_program
+                is_dual_degree_match = "Dual Degree" in specialization and "Dual Degree" in r_program
+                is_fnh_general_match = "Food, Nutrition, and Health Major" in specialization and "FNH General (" in r_program
+                is_food_science_exception = "Food Science Major" in specialization and "FNH" in r_program
+                is_nutrition_exception = "Nutritional Sciences Major" in specialization and "Double Major" in r_program
+                is_food_econ = "Food and Resource" in major and "Food and Resource" in r_program
+
+                # Combine conditions
+                if is_food_econ:
+                    print("ECON MAJOR:", major)
+                    print("RESTRICTED MAJOR:", r_program)
+
+                if is_base_match or is_dual_degree_match or is_fnh_general_match:
+                    if is_food_science_exception or is_nutrition_exception:
+                        continue
+                    print("SPECIALIZATION: ", specialization, "\nRESTRICTED PROGRAM: ", r_program, "\n")
+                
+                #TODO: MATCH ECEON MAJOR TO ONE RESTRICTED MAJOR AND THEN YOU'RE DONE
+                
 
             s_classes = []
 
@@ -103,14 +124,16 @@ def check_required_classes_or_restricted(major_content: dict, faculty_classes: s
             for c in faculty_classes:
                 if c in classes:
                     s_classes.append("Y")
-                elif c in restricted_classes: #this needs to be program specific becuase its checking EVERYTHING right now
-                    s_classes.append("R")
-                else:
-                    s_classes.append("N")
+               
+                    
+                    #this needs to be program specific becuase its checking EVERYTHING right now
+                #     s_classes.append("R")
+                # else:
+                #     s_classes.append("N")
 
             major_content[major][specialization] = s_classes
     
-    print(major_content)
+    # print(major_content)
 
 
     # so create new list, and then swap the old list with the new list and you're done
@@ -178,6 +201,22 @@ def find_major_courses(link: str):
         }
     }
     '''
+    def get_specialization(soup: BeautifulSoup) -> list:
+        
+        specialtySet = set()
+        
+        
+        for cell in soup.select('ol.list-buttons > li > a'):
+            specialtySet.update(parse_majors(cell))
+            
+        if specialtySet:
+            return list(specialtySet)
+        else:
+            return []
+
+
+
+
     lfs_soup = get_soup(link)
     links_to_majors = lfs_soup.select('ol.list-buttons > li > a')
 
@@ -192,6 +231,7 @@ def find_major_courses(link: str):
             major_soup = get_soup(f"https://vancouver.calendar.ubc.ca{major.get('href')}")
             # save major names as well into array as first item so it can be called with courses[0]
             specialization_links = get_specialization(major_soup) # have the individual majors now
+            # print(specialization_links)
 
             for specialty in specialization_links:
                 
@@ -260,24 +300,11 @@ def parse_majors(cell: BeautifulSoup):
     cell_text = cell.get_text().strip()
     major_set = set()
     
-    if ("Major" in cell_text and len(cell_text) < 50) or "Degree Requirement" in cell_text:
+    if ("Major" in cell_text and len(cell_text) < 50) or "Degree Requirement" in cell_text or "Dual Degree" in cell_text:
         major_set.add(cell) # add the original (with href)
     
     return major_set
         
-
-def get_specialization(soup: BeautifulSoup) -> list:
-    
-    specialtySet = set()
-    
-    
-    for cell in soup.select('ol.list-buttons > li > a'):
-        specialtySet.update(parse_majors(cell))
-        
-    if specialtySet:
-        return list(specialtySet)
-    else:
-        return []
 
 
 def get_soup(link: str):
