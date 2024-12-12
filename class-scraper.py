@@ -1,6 +1,8 @@
 from bs4 import BeautifulSoup
 import requests
 import csv
+import re
+from collections import OrderedDict
 
 
 '''
@@ -50,26 +52,18 @@ def main():
     faculty_term_1 = get_faculty_classes(TERM1_CLASSES_LINK)
     faculty_term_2 = get_faculty_classes(TERM2_CLASSES_LINK)
     faculty_term_1.extend(faculty_term_2)
-    total_classes = set(faculty_term_1)
+    sorted_total = sorted(faculty_term_1)
+    ordered_total_classes = OrderedDict.fromkeys(sorted_total, None)
 
-    restricted_courses = get_restricted_courses(VALID_CLASSES, RESTRICTED_COURSES_LINK)
-    # print(restricted_courses)
-    
-    #  USE THIS CONDITION TO SEE IF IN RESTRICTED!
-    # if any("APBI" in course for course in restricted_courses):
-    #     print("true")
-    # else:
-    #     print("false")
 
-        
+    restricted_courses = get_restricted_courses(VALID_CLASSES, RESTRICTED_COURSES_LINK)   
     find_major_courses(PARENT_FACULTY_LINK)
 
-    # TODO: implement to check whether class is required or restricted
-    check_required_classes_or_restricted(major_content, total_classes, restricted_courses)
+    check_required_classes_or_restricted(major_content, ordered_total_classes, restricted_courses)
 
     # export_to_csv(total_classes, 'extracted_courses.csv')
 
-def check_required_classes_or_restricted(major_content: dict, faculty_classes: set, restricted_classes: dict):
+def check_required_classes_or_restricted(major_content: dict, faculty_classes: OrderedDict, restricted_classes: dict):
     # how to store the new data? honestly just simple list
     # - 0 index is name of major
     # - rest are Y, N, or R
@@ -95,8 +89,8 @@ def check_required_classes_or_restricted(major_content: dict, faculty_classes: s
     '''
 
     for major, specialization in major_content.items():
-        for specialization, classes in specialization.items():
-            for r_program in restricted_classes:
+        for specialization, specialization_classes in specialization.items():
+            for r_program, r_class in restricted_classes.items():
                 # Check if specialization matches restricted program criteria
                 is_base_match = specialization[:-6] in r_program
                 is_dual_degree_match = "Dual Degree" in specialization and "Dual Degree" in r_program
@@ -109,31 +103,61 @@ def check_required_classes_or_restricted(major_content: dict, faculty_classes: s
                 if is_food_econ:
                     print("ECON MAJOR:", major)
                     print("RESTRICTED MAJOR:", r_program)
-
                 if is_base_match or is_dual_degree_match or is_fnh_general_match:
                     if is_food_science_exception or is_nutrition_exception:
                         continue
-                    print("SPECIALIZATION: ", specialization, "\nRESTRICTED PROGRAM: ", r_program, "\n")
-                
-                #TODO: MATCH ECEON MAJOR TO ONE RESTRICTED MAJOR AND THEN YOU'RE DONE
+                    # print("SPECIALIZATION: ", specialization, "\nRESTRICTED PROGRAM: ", r_program, "\n")
                 
 
-            s_classes = []
+                    '''
+                    run the restricted program courses against all courses. find out which ones are R's in a list
+                    then run specializations against all courses and find Y and N's
 
-            """right now im parsing through the actually list of all the classes, but i want to compare to the restricted classes, how do i do this? I want to get each specialization and get that part of the hashmap, """
-            for c in faculty_classes:
-                if c in classes:
-                    s_classes.append("Y")
-               
+                    then merge lists? (how do you do that?)
+
                     
-                    #this needs to be program specific becuase its checking EVERYTHING right now
-                #     s_classes.append("R")
-                # else:
-                #     s_classes.append("N")
+                    '''
+                    r_array = []
+                    valid_class_array = []
 
-            major_content[major][specialization] = s_classes
+                    course_pattern = re.compile(r'^[A-Z]+\s\d+') # regex to check valid class
+                    extracted_r_courses = [course_pattern.search(course).group(0) for course in r_class if course_pattern.search(course)]
+
+                    for each_class in faculty_classes.keys():
+                        parsable_class = each_class.replace("_V", "")
+                        if parsable_class in extracted_r_courses:
+                            r_array.append('R')
+                        else:
+                            r_array.append('N')
+                        
+                    
+                    for each_class in faculty_classes.keys():
+                        if each_class in specialization_classes:
+                            valid_class_array.append('Y')
+                        else:
+                            valid_class_array.append('N')
+
+                    
+                    # print(r_array)
+                    # print(valid_class_array)
+
+                    priority = {'Y': 3, 'R': 2, 'N': 1}
+
+                    # Merge function
+                    def merge_values(v1, v2):
+                        return v1 if priority[v1] >= priority[v2] else v2
+
+                   
+
+                    # Merging logic
+                    merged_classes = [merge_values(l1, l2) for l1, l2 in zip(r_array, valid_class_array)]
+
+                    # print(merged_classes)  # Output: ['N', 'Y', 'R', 'N', 'R']
+
+                    # merge lists! ITS CORRECT LFG
+                    major_content[major][specialization] = merged_classes
     
-    # print(major_content)
+    print(major_content)
 
 
     # so create new list, and then swap the old list with the new list and you're done
@@ -286,6 +310,7 @@ def get_all_classes(valid_classes: list, soup: BeautifulSoup) -> list:
                         course = check_if_code_done(cell_text, c)
                         courseList.add(course)
         
+        
         return courseList
     
 
@@ -300,7 +325,7 @@ def parse_majors(cell: BeautifulSoup):
     cell_text = cell.get_text().strip()
     major_set = set()
     
-    if ("Major" in cell_text and len(cell_text) < 50) or "Degree Requirement" in cell_text or "Dual Degree" in cell_text:
+    if ("Major" in cell_text and len(cell_text) < 50) or "Degree Requirements and" in cell_text or "Dual Degree" in cell_text:
         major_set.add(cell) # add the original (with href)
     
     return major_set
