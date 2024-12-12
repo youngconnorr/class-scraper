@@ -156,6 +156,12 @@ def check_required_classes_or_restricted(major_content: dict, faculty_classes: O
 
                     # merge lists! ITS CORRECT LFG
                     major_content[major][specialization] = merged_classes
+                    '''
+                    TODO: CHECK OVER THE 2021W AND 2022W COURSES CAUSE THAT MIGHTVE MESSEDUP, 
+                        - other than that, import pandas and then export to excel!
+                    
+                    '''
+                
     
     print(major_content)
 
