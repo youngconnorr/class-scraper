@@ -3,6 +3,8 @@ import requests
 import csv
 import re
 from collections import OrderedDict
+import pandas as pd
+from openpyxl import Workbook
 
 
 '''
@@ -60,6 +62,8 @@ def main():
     find_major_courses(PARENT_FACULTY_LINK)
 
     check_required_classes_or_restricted(major_content, ordered_total_classes, restricted_courses)
+    
+    
 
     # export_to_csv(total_classes, 'extracted_courses.csv')
 
@@ -163,7 +167,25 @@ def check_required_classes_or_restricted(major_content: dict, faculty_classes: O
                     '''
                 
     
-    print(major_content)
+    # print(major_content)
+    rows = []
+    
+    for major, specializations in major_content.items():
+        for specialization, values in specializations.items():
+            for value in values:
+                rows.append({"Major": major, "Specialization": specialization, "values" : value})
+             
+    df = pd.DataFrame(rows)
+    print(df)
+
+    # # Save to Excel
+    df.to_excel("almost_good_2.xlsx")
+    # print("done")
+    
+    
+    # Create a new workbook and select the active sheet
+    
+    
 
 
     # so create new list, and then swap the old list with the new list and you're done
