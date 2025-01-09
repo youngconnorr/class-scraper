@@ -179,7 +179,7 @@ def check_required_classes_or_restricted(major_content: dict, faculty_classes: O
     print(df)
 
     # # Save to Excel
-    df.to_excel("almost_good_2.xlsx")
+    df.to_excel("class-data.xlsx")
     # print("done")
     
     
