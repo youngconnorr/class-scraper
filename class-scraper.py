@@ -4,7 +4,6 @@ import csv
 import re
 from collections import OrderedDict
 import pandas as pd
-from openpyxl import Workbook
 
 
 '''
@@ -56,12 +55,13 @@ def main():
     faculty_term_1.extend(faculty_term_2)
     sorted_total = sorted(faculty_term_1)
     ordered_total_classes = OrderedDict.fromkeys(sorted_total, None)
+    export_to_csv(ordered_total_classes, "all_classes.csv")
 
 
-    restricted_courses = get_restricted_courses(VALID_CLASSES, RESTRICTED_COURSES_LINK)   
-    find_major_courses(PARENT_FACULTY_LINK)
+    # restricted_courses = get_restricted_courses(VALID_CLASSES, RESTRICTED_COURSES_LINK)   
+    # find_major_courses(PARENT_FACULTY_LINK)
 
-    check_required_classes_or_restricted(major_content, ordered_total_classes, restricted_courses)
+    # check_required_classes_or_restricted(major_content, ordered_total_classes, restricted_courses)
     
     
 
@@ -182,12 +182,6 @@ def check_required_classes_or_restricted(major_content: dict, faculty_classes: O
     df.to_excel("class-data.xlsx")
     # print("done")
     
-    
-    # Create a new workbook and select the active sheet
-    
-    
-
-
     # so create new list, and then swap the old list with the new list and you're done
 
 def get_restricted_courses(valid_classes: list, link: str):
