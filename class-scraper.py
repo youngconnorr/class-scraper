@@ -7,8 +7,6 @@ import pandas as pd
 
 
 '''
-TODO: PROBLEM WITH FINDING ALL COURSES... LIKE APBI 499, IT JUST DOESN'T EXIST??
-
 TODO:
 Get majors 
 get classes in majors and put in list
@@ -18,6 +16,23 @@ iterate through all class list and check if in major_classes:
     
 list of majors -> majors -> classes -> if in all_classes Y else N
 list of majors -> majors -> classes -> if in restricted elective: R
+
+FORMAT:
+
+major_content = {
+    "Applied Biology": {
+        "Applied Animal Biology": ["Course 1", "Course 2"],
+        "Sustainable Agriculture and Environment": ["Course 1", "Course 2"]
+    },
+    "Food, Nutrition and Health": {
+        "Dietetics": ["Course 1", "Course 2"],
+        "Food Market Analysis": ["Course 1", "Course 2"],
+        "Food Science": ["Course 1", "Course 2"],
+        "Nutritional Sciences": ["Course 1", "Course 2"],
+        "Food and Nutritional Sciences": ["Course 1", "Course 2"],
+        "Food, Nutrition and Health": ["Course 1", "Course 2"]
+    }
+}
 
 '''
 
@@ -58,39 +73,13 @@ def main():
     export_to_csv(ordered_total_classes, "all_classes.csv")
 
 
-    # restricted_courses = get_restricted_courses(VALID_CLASSES, RESTRICTED_COURSES_LINK)   
-    # find_major_courses(PARENT_FACULTY_LINK)
-
-    # check_required_classes_or_restricted(major_content, ordered_total_classes, restricted_courses)
-    
-    
-
-    # export_to_csv(total_classes, 'extracted_courses.csv')
-
+"""
+Overall Logic:
+- if course is in faculty classes add Y
+- elif course is in restricted class add R
+- neither add N
+"""
 def check_required_classes_or_restricted(major_content: dict, faculty_classes: OrderedDict, restricted_classes: dict):
-    # how to store the new data? honestly just simple list
-    # - 0 index is name of major
-    # - rest are Y, N, or R
-    # do same hashmap structure, but replace the list with Y,N,R
-
-    """find restricted by seperating programs,  """
-    """need to compare list of ALL courses to cur_classes"""
-
-    '''
-    restricted courses are a list of courses that belong to its major
-
-    we compare the restricted courses of the specific program to all the courses and then add Rs
-
-    how do we do this?
-    
-    parse through all of the courses
-
-    and see
-
-    if course is in faculty classes add Y
-    elif course is in restricted class add R
-    neither add N
-    '''
 
     for major, specialization in major_content.items():
         for specialization, specialization_classes in specialization.items():
@@ -110,20 +99,12 @@ def check_required_classes_or_restricted(major_content: dict, faculty_classes: O
                 if is_base_match or is_dual_degree_match or is_fnh_general_match:
                     if is_food_science_exception or is_nutrition_exception:
                         continue
-                    # print("SPECIALIZATION: ", specialization, "\nRESTRICTED PROGRAM: ", r_program, "\n")
-                
 
-                    '''
-                    run the restricted program courses against all courses. find out which ones are R's in a list
-                    then run specializations against all courses and find Y and N's
-
-                    then merge lists? (how do you do that?)
-
-                    
-                    '''
                     r_array = []
                     valid_class_array = []
 
+                    
+                    '''Replace Function'''
                     course_pattern = re.compile(r'^[A-Z]+\s\d+') # regex to check valid class
                     extracted_r_courses = [course_pattern.search(course).group(0) for course in r_class if course_pattern.search(course)]
 
@@ -141,33 +122,19 @@ def check_required_classes_or_restricted(major_content: dict, faculty_classes: O
                         else:
                             valid_class_array.append('N')
 
-                    
-                    # print(r_array)
-                    # print(valid_class_array)
-
                     priority = {'Y': 3, 'R': 2, 'N': 1}
 
-                    # Merge function
+                    '''Merge function'''
                     def merge_values(v1, v2):
                         return v1 if priority[v1] >= priority[v2] else v2
 
                    
 
-                    # Merging logic
+                    '''Merging logic'''
                     merged_classes = [merge_values(l1, l2) for l1, l2 in zip(r_array, valid_class_array)]
 
-                    # print(merged_classes)  # Output: ['N', 'Y', 'R', 'N', 'R']
-
-                    # merge lists! ITS CORRECT LFG
                     major_content[major][specialization] = merged_classes
-                    '''
-                    TODO: CHECK OVER THE 2021W AND 2022W COURSES CAUSE THAT MIGHTVE MESSEDUP, 
-                        - other than that, import pandas and then export to excel!
-                    
-                    '''
-                
     
-    # print(major_content)
     rows = []
     
     for major, specializations in major_content.items():
@@ -176,14 +143,13 @@ def check_required_classes_or_restricted(major_content: dict, faculty_classes: O
                 rows.append({"Major": major, "Specialization": specialization, "values" : value})
              
     df = pd.DataFrame(rows)
-    print(df)
-
-    # # Save to Excel
     df.to_excel("class-data.xlsx")
-    # print("done")
+    print("done")
     
-    # so create new list, and then swap the old list with the new list and you're done
-
+"""
+Parse restricted course links 
+to create restricted course list
+"""
 def get_restricted_courses(valid_classes: list, link: str):
     """Retrieve all restricted courses"""
     def parse_restricted(code, valid_classes: list):
@@ -218,7 +184,9 @@ def get_restricted_courses(valid_classes: list, link: str):
         
 
 
-
+"""
+Parse faculty link to get all classes
+"""
 def get_faculty_classes(link: str) -> list:
 
     soup = get_soup(link)
@@ -229,24 +197,7 @@ def get_faculty_classes(link: str) -> list:
 
 
 def find_major_courses(link: str):
-    '''
-    format:
-
-    major_content = {
-        "Applied Biology": {
-            "Applied Animal Biology": ["Course 1", "Course 2"],
-            "Sustainable Agriculture and Environment": ["Course 1", "Course 2"]
-        },
-        "Food, Nutrition and Health": {
-            "Dietetics": ["Course 1", "Course 2"],
-            "Food Market Analysis": ["Course 1", "Course 2"],
-            "Food Science": ["Course 1", "Course 2"],
-            "Nutritional Sciences": ["Course 1", "Course 2"],
-            "Food and Nutritional Sciences": ["Course 1", "Course 2"],
-            "Food, Nutrition and Health": ["Course 1", "Course 2"]
-        }
-    }
-    '''
+    
     def get_specialization(soup: BeautifulSoup) -> list:
         
         specialtySet = set()
@@ -260,9 +211,6 @@ def find_major_courses(link: str):
         else:
             return []
 
-
-
-
     lfs_soup = get_soup(link)
     links_to_majors = lfs_soup.select('ol.list-buttons > li > a')
 
@@ -275,25 +223,21 @@ def find_major_courses(link: str):
 
         if major.get('href'):
             major_soup = get_soup(f"https://vancouver.calendar.ubc.ca{major.get('href')}")
-            # save major names as well into array as first item so it can be called with courses[0]
-            specialization_links = get_specialization(major_soup) # have the individual majors now
-            # print(specialization_links)
-
+            specialization_links = get_specialization(major_soup)
             for specialty in specialization_links:
                 
-                # get classes for specialty
+                # Get classes for specialty
                 if specialty.get('href'):
                     s_soup = get_soup(f"https://vancouver.calendar.ubc.ca{specialty.get('href')}")
                     s_classes = get_all_classes(VALID_CLASSES, s_soup)
                 
-                # get name of specialty
                 specialty_name = specialty.get_text().strip()
 
                 major_content[major_name][specialty_name] = s_classes
 
-        
-    # print(major_content)
-
+"""
+Algorithm to know when a course code is valid
+"""
 def check_if_code_done(cell_text: str, cur_class: str):
 
     spaceNum = 0
@@ -343,12 +287,13 @@ def get_all_classes(valid_classes: list, soup: BeautifulSoup) -> list:
             
     return list(all_courses)
 
+
 def parse_majors(cell: BeautifulSoup):
     cell_text = cell.get_text().strip()
     major_set = set()
     
     if ("Major" in cell_text and len(cell_text) < 50) or "Degree Requirements and" in cell_text or "Dual Degree" in cell_text:
-        major_set.add(cell) # add the original (with href)
+        major_set.add(cell) # Add the original (with href)
     
     return major_set
         
