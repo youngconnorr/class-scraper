@@ -151,9 +151,8 @@ Parse restricted course links
 to create restricted course list
 """
 def get_restricted_courses(valid_classes: list, link: str):
-    """Retrieve all restricted courses"""
+    
     def parse_restricted(code, valid_classes: list):
-        """Parse through the different formatting for restricted courses"""
         cell_text = code.get_text().strip()
         courseSet = set()
 
@@ -165,7 +164,7 @@ def get_restricted_courses(valid_classes: list, link: str):
     soup = get_soup(link)
 
     r_dict = {}
-    # split up by accordion-shortcode accordion
+    # Split up by class names
     for major_group in soup.find_all("div", class_="accordion-group"):
 
         major_name = major_group.find("a", class_="accordion-toggle")
@@ -190,7 +189,7 @@ Parse faculty link to get all classes
 def get_faculty_classes(link: str) -> list:
 
     soup = get_soup(link)
-    # get class list
+    # Get class list
     all_classes = get_all_classes(VALID_CLASSES, soup)
 
     return all_classes
@@ -260,11 +259,15 @@ def check_if_code_done(cell_text: str, cur_class: str):
 
     
 
+"""
+Retrieve all classes from a given soup
+"""
 def get_all_classes(valid_classes: list, soup: BeautifulSoup) -> list:
-    """Retrieve all classes from a given soup"""
 
+    """
+    Perform checks on a given piece of HTML to see if its a valid class
+    """
     def parse_classes(code, valid_classes: list):
-        """Perform checks on a given piece of HTML to see if its a valid class"""
         cell_text = code.get_text().strip()
         courseList = set()
 
@@ -296,7 +299,6 @@ def parse_majors(cell: BeautifulSoup):
         major_set.add(cell) # Add the original (with href)
     
     return major_set
-        
 
 
 def get_soup(link: str):
