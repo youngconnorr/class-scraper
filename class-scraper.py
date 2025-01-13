@@ -70,6 +70,7 @@ def main():
     faculty_term_1.extend(faculty_term_2)
     sorted_total = sorted(faculty_term_1)
     ordered_total_classes = OrderedDict.fromkeys(sorted_total, None)
+    print(major_content)
     export_to_csv(ordered_total_classes, "all_classes.csv")
 
 
