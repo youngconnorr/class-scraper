@@ -70,7 +70,39 @@ def main():
     faculty_term_1.extend(faculty_term_2)
     sorted_total = sorted(faculty_term_1)
     ordered_total_classes = OrderedDict.fromkeys(sorted_total, None)
-    print(major_content)
+    find_major_courses(PARENT_FACULTY_LINK)
+    
+    """Match course titles from outside csv"""
+    # cur_csv = '24S_&_24W_All_LFS_Courses.csv'
+    # desired_fields = ['Course Section', 'Section Title']
+    # pd_data = pd.read_csv(cur_csv, skipinitialspace=True, usecols=desired_fields, index_col=False)
+    # course_name_match = {}
+    # for i in range(len(pd_data)):
+    #     course_section = pd_data.iloc[i, 0]
+    #     section_title = pd_data.iloc[i, 1]
+    #     course_name_match[course_section] = section_title
+    
+    # for c in ordered_total_classes.keys():
+    #     for xlsC in course_name_match.keys():
+    #         if ordered_total_classes[c] == None and c in xlsC:
+    #             ordered_total_classes[c] = course_name_match[xlsC]
+    #         else:
+    #             continue
+    
+    # print(ordered_total_classes)
+    
+    # df = pd.DataFrame(ordered_total_classes.items(), columns=['Course Section', 'Section Title'])
+
+    # # Export DataFrame to a CSV file
+    # output_csv = 'course_sections.csv'
+    # df.to_csv(output_csv, index=False)
+    
+    
+    """Uncomment below to create whole Y, N, R list"""
+    restricted_courses = get_restricted_courses(VALID_CLASSES, RESTRICTED_COURSES_LINK)   
+    check_required_classes_or_restricted(major_content, ordered_total_classes, restricted_courses)
+    
+    
     export_to_csv(ordered_total_classes, "all_classes.csv")
 
 
@@ -142,11 +174,11 @@ def check_required_classes_or_restricted(major_content: dict, faculty_classes: O
         for specialization, values in specializations.items():
             for value in values:
                 rows.append({"Major": major, "Specialization": specialization, "values" : value})
-             
+    
     df = pd.DataFrame(rows)
     df.to_excel("class-data.xlsx")
     print("done")
-    
+
 """
 Parse restricted course links 
 to create restricted course list
