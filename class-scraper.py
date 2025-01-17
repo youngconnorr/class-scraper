@@ -64,7 +64,12 @@ major_content = {}
 
 
 def main():
+    
+    
 
+    
+    
+    """Find all major/course names"""
     faculty_term_1 = get_faculty_classes(TERM1_CLASSES_LINK)
     faculty_term_2 = get_faculty_classes(TERM2_CLASSES_LINK)
     faculty_term_1.extend(faculty_term_2)
@@ -72,16 +77,30 @@ def main():
     ordered_total_classes = OrderedDict.fromkeys(sorted_total, None)
     find_major_courses(PARENT_FACULTY_LINK)
     
+    """Create another custom script"""
+    # cur_csv = '24S_&_24W_All_LFS_Courses.csv'
+    # desired_fields = ['Course Section']
+    # pd_data = pd.read_csv(cur_csv, skipinitialspace=True, usecols=desired_fields, index_col=False)
+    
+    # cut_off = "-"
+    
+    # xls_course_list = pd_data['Course Section'].tolist()
+    # ordered_total_classes = [course[:course.find(cut_off)] for course in xls_course_list]
+    # ordered_total_classes = OrderedDict.fromkeys(xls_course_list, None)
+    
     """Match course titles from outside csv"""
     # cur_csv = '24S_&_24W_All_LFS_Courses.csv'
     # desired_fields = ['Course Section', 'Section Title']
     # pd_data = pd.read_csv(cur_csv, skipinitialspace=True, usecols=desired_fields, index_col=False)
     # course_name_match = {}
+    
+    # build hashmap of course to course name
     # for i in range(len(pd_data)):
     #     course_section = pd_data.iloc[i, 0]
     #     section_title = pd_data.iloc[i, 1]
     #     course_name_match[course_section] = section_title
     
+    # 
     # for c in ordered_total_classes.keys():
     #     for xlsC in course_name_match.keys():
     #         if ordered_total_classes[c] == None and c in xlsC:
@@ -99,11 +118,13 @@ def main():
     
     
     """Uncomment below to create whole Y, N, R list"""
+    
+    
     restricted_courses = get_restricted_courses(VALID_CLASSES, RESTRICTED_COURSES_LINK)   
     check_required_classes_or_restricted(major_content, ordered_total_classes, restricted_courses)
     
     
-    export_to_csv(ordered_total_classes, "all_classes.csv")
+    # export_to_csv(ordered_total_classes, "new_xls.csv")
 
 
 """
@@ -176,7 +197,7 @@ def check_required_classes_or_restricted(major_content: dict, faculty_classes: O
                 rows.append({"Major": major, "Specialization": specialization, "values" : value})
     
     df = pd.DataFrame(rows)
-    df.to_excel("class-data.xlsx")
+    df.to_excel("xls_fixed_data.xlsx")
     print("done")
 
 """
