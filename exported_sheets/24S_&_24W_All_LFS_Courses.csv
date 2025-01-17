@@ -1,0 +1,663 @@
+Course Section,Course Subject,Course Number,Section Number,Academic Level,Section Status,Section Title,Term,Number of Registered Students,Number of Waitlisted Students with Seat Offer,Number of Waitlisted Students,Number of Registered Students and Active Seat Offer Notifications,Section Capacity,Wait List Capacity,Instructional Format,Delivery Mode,Instructor
+AANB_V 530-A_002,AANB_V,530,A_002,Graduate,Closed,Directed Studies,W2,0,0,0,0,0,0,Independent Study,In Person Learning,
+AANB_V 530-B_002,AANB_V,530,B_002,Graduate,Closed,Directed Studies,W2,0,0,0,0,0,0,Independent Study,In Person Learning,
+AANB_V 530-C_002,AANB_V,530,C_002,Graduate,Closed,Directed Studies,W2,0,0,0,0,0,0,Independent Study,In Person Learning,
+AANB_V 549-A_002,AANB_V,549,A_002,Graduate,Open,Master's Thesis,W2,0,0,0,0,20,0,Thesis,In Person Learning,
+AANB_V 549-B_002,AANB_V,549,B_002,Graduate,Open,Master's Thesis,W2,0,0,0,0,10,0,Thesis,In Person Learning,
+AANB_V 649-002,AANB_V,649,002,Graduate,Open,Doctoral Dissertation,W2,1,0,0,1,20,0,Thesis,In Person Learning,
+APBI_V 200-001,APBI_V,200,001,Undergraduate,Open,Introduction to Soil Science,W2,105,0,0,105,150,0,Lecture,In Person Learning,Sandra Brown
+APBI_V 200-002,APBI_V,200,002,Undergraduate,Open,Introduction to Soil Science,W2,109,0,0,109,150,0,Lecture,In Person Learning,Maja Krzic
+APBI_V 200-L01,APBI_V,200,L01,Undergraduate,Open,Introduction to Soil Science,W2,27,0,0,27,30,0,Laboratory,In Person Learning,
+APBI_V 200-L02,APBI_V,200,L02,Undergraduate,Closed,Introduction to Soil Science,W2,30,0,0,30,30,0,Laboratory,In Person Learning,
+APBI_V 200-L03,APBI_V,200,L03,Undergraduate,Open,Introduction to Soil Science,W2,22,0,0,22,30,0,Laboratory,In Person Learning,
+APBI_V 200-L04,APBI_V,200,L04,Undergraduate,Closed,Introduction to Soil Science,W2,30,0,0,30,30,0,Laboratory,In Person Learning,
+APBI_V 200-L05,APBI_V,200,L05,Undergraduate,Open,Introduction to Soil Science,W2,29,0,0,29,30,0,Laboratory,In Person Learning,
+APBI_V 200-L06,APBI_V,200,L06,Undergraduate,Open,Introduction to Soil Science,W2,22,0,0,22,30,0,Laboratory,In Person Learning,
+APBI_V 200-L07,APBI_V,200,L07,Undergraduate,Open,Introduction to Soil Science,W2,9,0,0,9,30,0,Laboratory,In Person Learning,
+APBI_V 200-L08,APBI_V,200,L08,Undergraduate,Open,Introduction to Soil Science,W2,18,0,0,18,30,0,Laboratory,In Person Learning,
+APBI_V 200-L09,APBI_V,200,L09,Undergraduate,Open,Introduction to Soil Science,W2,7,0,0,7,30,0,Laboratory,In Person Learning,
+APBI_V 200-L10,APBI_V,200,L10,Undergraduate,Open,Introduction to Soil Science,W2,20,0,0,20,30,0,Laboratory,In Person Learning,
+APBI_V 200-PR1,APBI_V,200,PR1,Undergraduate,Closed,Introduction to Soil Science,W2,0,0,0,0,0,0,Laboratory,In Person Learning,
+APBI_V 200-PR2,APBI_V,200,PR2,Undergraduate,Closed,Introduction to Soil Science,W2,0,0,0,0,0,0,Laboratory,In Person Learning,
+APBI_V 200-PR3,APBI_V,200,PR3,Undergraduate,Closed,Introduction to Soil Science,W2,0,0,0,0,0,0,Laboratory,In Person Learning,
+APBI_V 200-PR4,APBI_V,200,PR4,Undergraduate,Closed,Introduction to Soil Science,W2,0,0,0,0,0,0,Laboratory,In Person Learning,
+APBI_V 210-001,APBI_V,210,001,Undergraduate,Open,Vascular Plants,W2,13,0,0,13,20,0,Lecture,In Person Learning,"Sean Graham
+
+Shona Margaret Ellis"
+APBI_V 210-L01,APBI_V,210,L01,Undergraduate,Open,Vascular Plants,W2,4,0,0,4,5,0,Laboratory,In Person Learning,Shona Margaret Ellis
+APBI_V 210-L02,APBI_V,210,L02,Undergraduate,Preliminary,Vascular Plants,W2,0,0,0,0,0,0,Laboratory,In Person Learning,
+APBI_V 210-L03,APBI_V,210,L03,Undergraduate,Open,Vascular Plants,W2,4,0,0,4,10,0,Laboratory,In Person Learning,Shona Margaret Ellis
+APBI_V 210-L05,APBI_V,210,L05,Undergraduate,Closed,Vascular Plants,W2,5,0,0,5,5,0,Laboratory,In Person Learning,Shona Margaret Ellis
+APBI_V 210-L06,APBI_V,210,L06,Undergraduate,Open,Vascular Plants,W2,0,0,0,0,5,0,Laboratory,In Person Learning,Shona Margaret Ellis
+APBI_V 210-L08,APBI_V,210,L08,Undergraduate,Open,Vascular Plants,W2,0,0,0,0,5,0,Laboratory,In Person Learning,Shona Margaret Ellis
+APBI_V 214-002,APBI_V,214,002,Undergraduate,Closed,Animal Sheltering and Companion Animal Support Services,W2,50,0,14,50,50,14,Lecture,In Person Learning,Alexandra Protopopova
+APBI_V 265-001,APBI_V,265,001,Undergraduate,Open,Sustainable Agriculture and Food Systems,W2,39,0,0,39,43,0,Lecture,In Person Learning,Delisa Lewis
+APBI_V 290-201,APBI_V,290,201,Undergraduate,Open,Introductory Topics in Applied Biology,W2,31,0,0,31,33,0,Lecture,In Person Learning,Camila Cavalli
+APBI_V 311-001,APBI_V,311,001,Undergraduate,Open,"Comparative Cardiovascular, Respiratory and Osmoregulatory Physiology",W2,24,0,0,24,50,0,Lecture,In Person Learning,Colin Brauner
+APBI_V 314-003,APBI_V,314,003,Undergraduate,Waitlist,Animals and Society,W2,80,0,14,80,80,15,Lecture,In Person Learning,Amelia Macrae
+APBI_V 315-001,APBI_V,315,001,Undergraduate,Waitlist,Animal Welfare and the Ethics of Animal Use,W2,70,0,16,70,70,20,Lecture,In Person Learning,
+APBI_V 316-001,APBI_V,316,001,Undergraduate,Closed,"Equine Biology, Health and Welfare",W2,50,0,5,50,50,5,Lecture,In Person Learning,Amelia Macrae
+APBI_V 317-002,APBI_V,317,002,Undergraduate,Preliminary,Welfare and Ethics of using Animals in Science,W2,0,0,0,0,50,0,Lecture,Online Learning,Catherine Schuppli
+APBI_V 342-001,APBI_V,342,001,Undergraduate,Closed,Soil Biology,W2,14,0,0,14,14,0,Lecture,In Person Learning,Akshit Puri
+APBI_V 342-L01,APBI_V,342,L01,Undergraduate,Closed,Soil Biology,W2,14,0,0,14,14,0,Laboratory,In Person Learning,Christopher Chanway
+APBI_V 360-001,APBI_V,360,001,Undergraduate,Open,Agroecology II: Ecology of Agricultural Systems,W2,30,0,0,30,48,0,Lecture,In Person Learning,Risa Sargent
+APBI_V 361-199,APBI_V,361,199,Undergraduate,Closed,Key Indicators of Agroecosystem Sustainability,W2,48,0,6,48,50,6,Lecture,Online Learning,Delisa Lewis
+APBI_V 402-002,APBI_V,402,002,Undergraduate,Open,Sustainable Soil Management,W2,46,0,0,46,48,0,Lecture,In Person Learning,"Maja Krzic
+
+Sandra Brown"
+APBI_V 405-002,APBI_V,405,002,Undergraduate,Open,Plant-Water Relations for Sustainable Agriculture,W2,15,0,0,15,40,0,Lecture,In Person Learning,Thorsten Knipfer
+APBI_V 412-001,APBI_V,412,001,Undergraduate,Preliminary,Belowground Ecosystems,W2,0,0,0,0,0,0,Lecture,In Person Learning,
+APBI_V 415-001,APBI_V,415,001,Undergraduate,Preliminary,Applied Animal Behaviour,W2,0,0,0,0,35,10,Lecture,Hybrid Learning,
+APBI_V 419-201,APBI_V,419,201,Undergraduate,Closed,Fish Health,W2,35,0,0,35,35,0,Lecture,Online Learning,Paige Adrienne Ackerman
+APBI_V 423-001,APBI_V,423,001,Undergraduate,Open,Ecological Restoration,W2,33,0,0,33,40,0,Lecture,In Person Learning,Alex Moore
+APBI_V 428-201,APBI_V,428,201,Undergraduate,Closed,Integrated Pest Management,W2,50,0,0,50,50,0,Lecture,Online Learning,Yasmin Akhtar
+APBI_V 463-002,APBI_V,463,002,Undergraduate,Open,Insects in Agroecosystems,W2,11,0,0,11,30,0,Lecture,In Person Learning,Juli Carrillo
+APBI_V 490-D_201,APBI_V,490,D_201,Undergraduate,Preliminary,Advanced Topics in Applied Biology,W2,0,0,0,0,0,0,Lecture,Hybrid Learning,
+APBI_V 490-E_202,APBI_V,490,E_202,Undergraduate,Closed,Advanced Topics in Applied Biology,W2,36,0,15,36,36,15,Lecture,In Person Learning,Alex Boo
+APBI_V 496-A_002,APBI_V,496,A_002,Undergraduate,Closed,Applied Animal Biology Practicum,W2,0,0,0,0,0,0,Experiential,In Person Learning,Sara Dubois
+APBI_V 496-B_002,APBI_V,496,B_002,Undergraduate,Closed,Applied Animal Biology Practicum,W2,0,0,0,0,0,0,Experiential,In Person Learning,Sara Dubois
+APBI_V 497-A_002,APBI_V,497,A_002,Undergraduate,Closed,Directed Studies,W2,0,0,0,0,0,0,Independent Study,In Person Learning,
+APBI_V 497-B_002,APBI_V,497,B_002,Undergraduate,Closed,Directed Studies,W2,5,0,0,5,0,0,Independent Study,In Person Learning,
+APBI_V 497-C_002,APBI_V,497,C_002,Undergraduate,Closed,Directed Studies,W2,0,0,0,0,0,0,Independent Study,In Person Learning,
+APBI_V 497-D_002,APBI_V,497,D_002,Undergraduate,Closed,Directed Studies,W2,0,0,0,0,0,0,Independent Study,In Person Learning,
+APBI_V 497-E_102,APBI_V,497,E_102,Undergraduate,Closed,Directed Studies,W2,0,0,0,0,0,0,Independent Study,In Person Learning,
+APBI_V 498-102,APBI_V,498,102,Undergraduate,Closed,Undergraduate Essay,W2,0,0,0,0,0,0,Seminar,In Person Learning,
+APBI_V 499-102,APBI_V,499,102,Undergraduate,Closed,Undergraduate Thesis,W2,0,0,0,0,0,0,Thesis,In Person Learning,
+FNH_V 160-201,FNH_V,160,201,Undergraduate,Closed,Integrated Physiology for Human Nutrition I,W2,87,0,20,87,87,20,Lecture,In Person Learning,Elizabeth Novak
+FNH_V 161-201,FNH_V,161,201,Undergraduate,Open,Integrated Physiology for Human Nutrition II,W2,121,0,2,121,125,30,Lecture,In Person Learning,Elizabeth Novak
+FNH_V 200-103,FNH_V,200,103,Undergraduate,Open,Exploring Our Food,W2,123,0,14,123,150,50,Lecture,In Person Learning,Azita Madadi Noei
+FNH_V 200-104,FNH_V,200,104,Undergraduate,Closed,Exploring Our Food,W2,148,2,50,150,150,50,Lecture,Online Learning,Danielle Schultze
+FNH_V 250-002,FNH_V,250,002,Undergraduate,Open,Nutrition Concepts and Controversies,W2,121,0,23,121,125,30,Lecture,In Person Learning,Gail Hammond
+FNH_V 303-001,FNH_V,303,001,Undergraduate,Open,Food Product Development,W2,52,0,20,52,64,20,Lecture,In Person Learning,Anubhav Pratap-Singh
+FNH_V 309-001,FNH_V,309,001,Undergraduate,Open,Food Processing,W2,60,0,30,60,75,30,Lecture,In Person Learning,Anubhav Pratap-Singh
+FNH_V 309-D01,FNH_V,309,D01,Undergraduate,Open,Food Processing,W2,60,0,0,60,75,0,Discussion,In Person Learning,Anubhav Pratap-Singh
+FNH_V 326-001,FNH_V,326,001,Undergraduate,Closed,Food Science Laboratory II,W2,16,0,0,16,15,0,Laboratory,In Person Learning,Vasileios Kontogiorgos
+FNH_V 326-002,FNH_V,326,002,Undergraduate,Closed,Food Science Laboratory II,W2,15,0,0,15,15,0,Laboratory,In Person Learning,Vasileios Kontogiorgos
+FNH_V 330-002,FNH_V,330,002,Undergraduate,Waitlist,Introduction to Wine Science I,W2,199,1,79,200,200,80,Lecture,Multi-access Learning,Jay Martiniuk
+FNH_V 330-L2A,FNH_V,330,L2A,Undergraduate,Closed,Introduction to Wine Science I,W2,25,0,0,25,25,0,Laboratory,In Person Learning,Jay Martiniuk
+FNH_V 330-L2B,FNH_V,330,L2B,Undergraduate,Closed,Introduction to Wine Science I,W2,25,0,0,25,25,0,Laboratory,In Person Learning,Jay Martiniuk
+FNH_V 330-L2C,FNH_V,330,L2C,Undergraduate,Closed,Introduction to Wine Science I,W2,25,0,0,25,25,0,Laboratory,In Person Learning,Jay Martiniuk
+FNH_V 330-L2D,FNH_V,330,L2D,Undergraduate,Closed,Introduction to Wine Science I,W2,25,0,0,25,25,0,Laboratory,In Person Learning,Jay Martiniuk
+FNH_V 330-L2E,FNH_V,330,L2E,Undergraduate,Closed,Introduction to Wine Science I,W2,25,0,0,25,25,0,Laboratory,In Person Learning,Jay Martiniuk
+FNH_V 330-L2F,FNH_V,330,L2F,Undergraduate,Closed,Introduction to Wine Science I,W2,25,0,0,25,25,0,Laboratory,In Person Learning,Jay Martiniuk
+FNH_V 330-L2G,FNH_V,330,L2G,Undergraduate,Open,Introduction to Wine Science I,W2,24,0,0,24,25,0,Laboratory,In Person Learning,Jay Martiniuk
+FNH_V 330-L2H,FNH_V,330,L2H,Undergraduate,Closed,Introduction to Wine Science I,W2,25,0,0,25,25,0,Laboratory,In Person Learning,Jay Martiniuk
+FNH_V 335-001,FNH_V,335,001,Undergraduate,Open,Introduction to Wine Science II,W2,27,0,0,27,30,0,Lecture,In Person Learning,Jay Martiniuk
+FNH_V 335-L01,FNH_V,335,L01,Undergraduate,Open,Introduction to Wine Science II,W2,27,0,0,27,30,0,Laboratory,In Person Learning,Jay Martiniuk
+FNH_V 335-PR1,FNH_V,335,PR1,Undergraduate,Preliminary,Introduction to Wine Science II,W2,0,0,0,0,0,0,Lecture,In Person Learning,
+FNH_V 340-001,FNH_V,340,001,Undergraduate,Preliminary,Food Theory and Applications,W2,0,0,0,0,0,0,Lecture,In Person Learning,
+FNH_V 340-002,FNH_V,340,002,Undergraduate,Open,Food Theory and Applications,W2,37,0,0,37,40,0,Lecture,In Person Learning,Anna Brisco
+FNH_V 340-L01,FNH_V,340,L01,Undergraduate,Open,Food Theory and Applications,W2,18,0,0,18,20,0,Experiential,In Person Learning,"Anna Brisco
+
+Gerry Kasten"
+FNH_V 340-L02,FNH_V,340,L02,Undergraduate,Open,Food Theory and Applications,W2,19,0,0,19,20,0,Experiential,In Person Learning,"Anna Brisco
+
+Gerry Kasten"
+FNH_V 345-201,FNH_V,345,201,Undergraduate,Open,Counselling Skills in Dietetics,W2,36,0,0,36,40,0,Lecture,In Person Learning,
+FNH_V 350-002,FNH_V,350,002,Undergraduate,Open,Fundamentals of Nutrition,W2,102,0,8,102,150,20,Lecture,In Person Learning,
+FNH_V 351-002,FNH_V,351,002,Undergraduate,Open,"Vitamins, Minerals, and Health",W2,95,0,0,95,150,20,Lecture,In Person Learning,
+FNH_V 351-IX2,FNH_V,351,IX2,Undergraduate,Open,"Vitamins, Minerals, and Health",W2,95,0,0,95,150,0,Independent Study,In Person Learning,
+FNH_V 355-002,FNH_V,355,002,Undergraduate,Open,International Nutrition,W2,257,0,75,257,265,75,Lecture,Online Learning,Candice Rideout
+FNH_V 371-002,FNH_V,371,002,Undergraduate,Open,Human Nutrition Over The Life Span,W2,159,0,16,159,205,25,Lecture,In Person Learning,Elizabeth Novak
+FNH_V 375-201,FNH_V,375,201,Undergraduate,Open,Nutrition Care I,W2,35,0,0,35,40,0,Lecture,In Person Learning,Bruna Donatti Castro Falci
+FNH_V 402-001,FNH_V,402,001,Undergraduate,Open,Functional Foods,W2,88,0,0,88,95,20,Lecture,In Person Learning,Jerzy Zawistowski
+FNH_V 403-002,FNH_V,403,002,Undergraduate,Open,"Food Laws, Regulations and Quality Assurance",W2,84,0,3,84,85,25,Lecture,In Person Learning,Nancy Ross
+FNH_V 403-D03,FNH_V,403,D03,Undergraduate,Open,"Food Laws, Regulations and Quality Assurance",W2,41,0,0,41,43,0,Discussion,In Person Learning,Nancy Ross
+FNH_V 403-D04,FNH_V,403,D04,Undergraduate,Closed,"Food Laws, Regulations and Quality Assurance",W2,43,0,0,43,43,0,Discussion,In Person Learning,Nancy Ross
+FNH_V 404-201,FNH_V,404,201,Undergraduate,Open,Food Safety and Quality Management,W2,44,0,0,44,50,0,Lecture,In Person Learning,Rebecca Robertson
+FNH_V 419-001,FNH_V,419,001,Undergraduate,Preliminary,Interfacial Phenomena,W2,0,0,0,0,0,0,Lecture,In Person Learning,
+FNH_V 451-002,FNH_V,451,002,Undergraduate,Open,Nutrient Metabolism and Implications for Health,W2,49,0,0,49,65,0,Research,In Person Learning,Yvonne Lamers
+FNH_V 455-001,FNH_V,455,001,Undergraduate,Open,Applied International Nutrition,W2,47,0,0,47,71,0,Lecture,In Person Learning,Crystal Dawn Karakochuk
+FNH_V 473-001,FNH_V,473,001,Undergraduate,Open,Applied Public Health Nutrition,W2,63,0,15,63,72,15,Lecture,In Person Learning,Gerry Kasten
+FNH_V 474-002,FNH_V,474,002,Undergraduate,Open,Sport Nutrition,W2,53,0,0,53,80,0,Lecture,In Person Learning,David Wright
+FNH_V 475-002,FNH_V,475,002,Undergraduate,Open,Nutrition Care III,W2,35,0,0,35,40,0,Lecture,In Person Learning,Bruna Donatti Castro Falci
+FNH_V 477-001,FNH_V,477,001,Undergraduate,Open,Nutrition and Disease Prevention,W2,55,0,0,55,80,10,Lecture,In Person Learning,Barbara Stefanska
+FNH_V 480-001,FNH_V,480,001,Undergraduate,Preliminary,Professional Dietetic Practice II,W2,0,0,0,0,0,0,Lecture,In Person Learning,
+FNH_V 480-002,FNH_V,480,002,Undergraduate,Open,Professional Dietetic Practice II,W2,35,0,0,35,40,0,Lecture,In Person Learning,Anna Brisco
+FNH_V 483-101,FNH_V,483,101,Undergraduate,Open,Dietetics Practice Education Placement IV,W2,35,0,0,35,40,0,Experiential,In Person Learning,"Gordon Ly
+
+Kara Vogt
+
+Tamar Kafka"
+FNH_V 483-102,FNH_V,483,102,Undergraduate,Open,Dietetics Practice Education Placement IV,W2,0,0,0,0,40,0,Experiential,In Person Learning,"Gordon Ly
+
+Kara Vogt
+
+Tamar Kafka"
+FNH_V 497-A_102,FNH_V,497,A_102,Undergraduate,Closed,"Directed Studies in Food, Nutrition and Health",W2,0,0,0,0,0,0,Independent Study,In Person Learning,David Wright
+FNH_V 497-B_102,FNH_V,497,B_102,Undergraduate,Closed,"Directed Studies in Food, Nutrition and Health",W2,0,0,0,0,0,0,Independent Study,In Person Learning,David Wright
+FNH_V 497-E_102,FNH_V,497,E_102,Undergraduate,Closed,"Directed Studies in Food, Nutrition and Health",W2,0,0,0,0,0,0,Independent Study,In Person Learning,David Wright
+FNH_V 499-102,FNH_V,499,102,Undergraduate,Closed,Undergraduate Thesis,W2,0,0,0,0,0,0,Thesis,In Person Learning,David Wright
+FOOD_V 500-002,FOOD_V,500,002,Graduate,Open,M.Sc. Seminar,W2,0,0,0,0,30,0,Seminar,In Person Learning,John Frostad
+FOOD_V 511-DNU_002,FOOD_V,511,DNU_002,Graduate,Preliminary,Master of Food Science Workshops,W2,0,0,0,0,0,0,Workshop,In Person Learning,
+FOOD_V 515-002,FOOD_V,515,002,Graduate,Open,Fundamentals of Agri-Food Business,W2,0,0,0,0,25,0,Lecture,In Person Learning,Ronald Wasik
+FOOD_V 516-002,FOOD_V,516,002,Graduate,Open,Advanced Food Safety and Quality Management,W2,18,0,0,18,30,0,Lecture,In Person Learning,Alberto Mendoza
+FOOD_V 519-001,FOOD_V,519,001,Graduate,Preliminary,Interfacial Phenomena,W2,0,0,0,0,0,0,Lecture,In Person Learning,
+FOOD_V 520-002,FOOD_V,520,002,Graduate,Open,Advances in Food Analysis,W2,14,0,0,14,25,0,Lecture,In Person Learning,Tianxi Yang
+FOOD_V 520-L01,FOOD_V,520,L01,Graduate,Open,Advances in Food Analysis,W2,14,0,0,14,25,0,Laboratory,In Person Learning,Tianxi Yang
+FOOD_V 522-002,FOOD_V,522,002,Graduate,Open,Advances in Food Chemistry,W2,19,0,0,19,30,0,Lecture,In Person Learning,Derek Dee
+FOOD_V 523-002,FOOD_V,523,002,Graduate,Open,Advances in Food Microbiology,W2,24,0,0,24,25,0,Lecture,In Person Learning,Leluo Guan
+FOOD_V 523-L01,FOOD_V,523,L01,Graduate,Open,Advances in Food Microbiology,W2,24,0,0,24,25,0,Laboratory,In Person Learning,Leluo Guan
+FOOD_V 524-002,FOOD_V,524,002,Graduate,Open,Advances in Food Processing,W2,6,0,0,6,30,0,Lecture,In Person Learning,"Anubhav Pratap-Singh
+
+Farahnaz Fathordoobady"
+FOOD_V 524-L01,FOOD_V,524,L01,Graduate,Closed,Advances in Food Processing,W2,5,0,0,5,0,0,Laboratory,In Person Learning,"Anubhav Pratap-Singh
+
+Farahnaz Fathordoobady"
+FOOD_V 524-L02,FOOD_V,524,L02,Graduate,Open,Advances in Food Processing,W2,1,0,0,1,15,0,Laboratory,In Person Learning,"Anubhav Pratap-Singh
+
+Farahnaz Fathordoobady"
+FOOD_V 527-A_002,FOOD_V,527,A_002,Graduate,Open,Special Topics in Food Science,W2,18,0,0,18,30,0,Lecture,In Person Learning,Alberto Mendoza
+FOOD_V 529-002,FOOD_V,529,002,Graduate,Closed,Laboratory Methods in Sensory Evaluation,W2,16,0,0,16,0,0,Lecture,In Person Learning,Margaret Anne Cliff
+FOOD_V 529-L02,FOOD_V,529,L02,Graduate,Closed,Laboratory Methods in Sensory Evaluation,W2,16,0,0,16,0,0,Laboratory,In Person Learning,Margaret Anne Cliff
+FOOD_V 530-A_002,FOOD_V,530,A_002,Graduate,Closed,Directed Studies,W2,0,0,0,0,0,0,Independent Study,In Person Learning,
+FOOD_V 530-B_002,FOOD_V,530,B_002,Graduate,Closed,Directed Studies,W2,0,0,0,0,0,0,Independent Study,In Person Learning,
+FOOD_V 549-A_002,FOOD_V,549,A_002,Graduate,Open,Master's Thesis,W2,0,0,0,0,20,0,Thesis,In Person Learning,
+FOOD_V 600-002,FOOD_V,600,002,Graduate,Open,Ph.D. Seminar,W2,0,0,0,0,30,0,Seminar,In Person Learning,John Frostad
+FOOD_V 649-002,FOOD_V,649,002,Graduate,Open,Doctoral Dissertation,W2,0,0,0,0,20,0,Thesis,In Person Learning,
+FRE_V 290-002,FRE_V,290,002,Undergraduate,Open,Introductory Topics in Food and Resource Economics,W2,12,0,0,12,30,0,Lecture,In Person Learning,
+FRE_V 290-L01,FRE_V,290,L01,Undergraduate,Open,Introductory Topics in Food and Resource Economics,W2,12,0,0,12,30,0,Laboratory,In Person Learning,
+FRE_V 302-001,FRE_V,302,001,Undergraduate,Open,Small Business Management in Agri-food Industries,W2,27,0,0,27,45,0,Lecture,In Person Learning,Kelleen Wiseman
+FRE_V 302-201,FRE_V,302,201,Undergraduate,Open,Small Business Management in Agri-food Industries,W2,23,0,0,23,25,0,Lecture,Hybrid Learning,Jeffrey Carmichael
+FRE_V 385-002,FRE_V,385,002,Undergraduate,Open,Quantitative Methods for Business and Resource Management,W2,16,0,0,16,40,0,Lecture,In Person Learning,Michael Johnson
+FRE_V 385-L01,FRE_V,385,L01,Undergraduate,Open,Quantitative Methods for Business and Resource Management,W2,16,0,0,16,40,0,Laboratory,In Person Learning,Michael Johnson
+FRE_V 420-002,FRE_V,420,002,Undergraduate,Open,The Economics of International Trade and the Environment,W2,15,0,0,15,50,0,Lecture,In Person Learning,Carol McAusland
+FRE_V 460-001,FRE_V,460,001,Undergraduate,Open,Economics of Food Consumption,W2,18,0,0,18,30,0,Lecture,In Person Learning,Carol McAusland
+FRE_V 474-001,FRE_V,474,001,Undergraduate,Open,Causal Inference in the Economics of Natural Resource Conservation,W2,7,0,0,7,30,0,Lecture,In Person Learning,Sumeet Gulati
+FRE_V 474-L01,FRE_V,474,L01,Undergraduate,Open,Causal Inference in the Economics of Natural Resource Conservation,W2,7,0,0,7,30,0,Laboratory,In Person Learning,Sumeet Gulati
+FRE_V 490-002,FRE_V,490,002,Undergraduate,Open,Current Issues in Food and Resource Economics,W2,13,0,0,13,30,0,Lecture,In Person Learning,Jonathan Proctor
+FRE_V 490-L01,FRE_V,490,L01,Undergraduate,Open,Current Issues in Food and Resource Economics,W2,13,0,0,13,30,0,Laboratory,In Person Learning,Jonathan Proctor
+FRE_V 500-002,FRE_V,500,002,Graduate,Open,MSc Seminar,W2,0,0,0,0,10,0,Seminar,In Person Learning,Frederik Noack
+FRE_V 505-002,FRE_V,505,002,Graduate,Open,Agricultural and Resource Policy Analysis - Policy and Project Evaluation Tools,W2,2,0,0,2,45,0,Lecture,In Person Learning,Richard Barichello
+FRE_V 515-002,FRE_V,515,002,Graduate,Open,Agribusiness Management,W2,7,0,0,7,45,0,Lecture,In Person Learning,Karen Taylor
+FRE_V 517-002,FRE_V,517,002,Graduate,Open,Futures Trading in Agricultural Commodities,W2,4,0,0,4,40,0,Lecture,In Person Learning,Kelleen Wiseman
+FRE_V 518-002,FRE_V,518,002,Graduate,Open,Survey Design and Data Analysis,W2,8,0,0,8,45,0,Lecture,In Person Learning,Timothy Silk
+FRE_V 521-D_002,FRE_V,521,D_002,Graduate,Open,Topics in Food and Resource Economics,W2,0,0,0,0,45,0,Laboratory,In Person Learning,Amy Goldlist
+FRE_V 521-D_L02,FRE_V,521,D_L02,Graduate,Open,Topics in Food and Resource Economics,W2,0,0,0,0,45,0,Laboratory,In Person Learning,Amy Goldlist
+FRE_V 521-E_002,FRE_V,521,E_002,Graduate,Open,Topics in Food and Resource Economics,W2,0,0,0,0,45,0,Lecture,In Person Learning,Murray Fulton
+FRE_V 521-E_LX1,FRE_V,521,E_LX1,Graduate,Open,Topics in Food and Resource Economics,W2,0,0,0,0,45,0,Laboratory,In Person Learning,Murray Fulton
+FRE_V 521-F_002,FRE_V,521,F_002,Graduate,Preliminary,Topics in Food and Resource Economics,W2,0,0,0,0,0,0,Lecture,In Person Learning,
+FRE_V 521-F_003,FRE_V,521,F_003,Graduate,Preliminary,Topics in Food and Resource Economics,W2,0,0,0,0,0,0,Laboratory,In Person Learning,
+FRE_V 521-G_002,FRE_V,521,G_002,Graduate,Canceled,Topics in Food and Resource Economics,W2,0,0,0,0,45,0,Lecture,In Person Learning,
+FRE_V 521-G_LX1,FRE_V,521,G_LX1,Graduate,Canceled,Topics in Food and Resource Economics,W2,0,0,0,0,45,0,Laboratory,In Person Learning,
+FRE_V 523-002,FRE_V,523,002,Graduate,Open,Resource Economics I,W2,0,0,0,0,45,0,Lecture,In Person Learning,"Gordon Munro
+
+Ussif Rashid Sumaila"
+FRE_V 526-002,FRE_V,526,002,Graduate,Open,Environmental Economics and Policy: Theory,W2,7,0,0,7,50,0,Lecture,In Person Learning,Sumeet Gulati
+FRE_V 527-002,FRE_V,527,002,Graduate,Open,Environmental Economics and Policy: Empirical Analysis,W2,5,0,0,5,45,0,Lecture,In Person Learning,Joséphine Gantois
+FRE_V 529-002,FRE_V,529,002,Graduate,Open,Estimating Econometric Models,W2,2,0,0,2,45,0,Lecture,In Person Learning,Michael Johnson
+FRE_V 530-002,FRE_V,530,002,Graduate,Closed,Econometrics with Time Series Data,W2,0,0,0,0,0,0,Lecture,In Person Learning,Kurt Niquidet
+FRE_V 530-L02,FRE_V,530,L02,Graduate,Open,Econometrics with Time Series Data,W2,0,0,0,0,45,0,Laboratory,In Person Learning,Kurt Niquidet
+FRE_V 531-002,FRE_V,531,002,Graduate,Open,Global Food and Resource Governance,W2,3,0,0,3,19,0,Lecture,In Person Learning,Matias Margulis
+FRE_V 585-002,FRE_V,585,002,Graduate,Open,Quantitative Methods for Business and Natural Resource Management,W2,6,0,0,6,45,0,Lecture,In Person Learning,Michael Johnson
+FRE_V 600-002,FRE_V,600,002,Graduate,Open,PhD Seminar,W2,0,0,0,0,10,0,Seminar,In Person Learning,Frederik Noack
+GRS_V 290-A_103,GRS_V,290,A_103,Undergraduate,Open,Global Issues in Cultural Context,W2,3,0,0,3,5,0,Lecture,In Person Learning,Leslie Lavkulich
+GRS_V 290-A_IX3,GRS_V,290,A_IX3,Undergraduate,Open,Global Issues in Cultural Context,W2,3,0,0,3,5,0,Independent Study,In Person Learning,
+GRS_V 300-001,GRS_V,300,001,Undergraduate,Open,Global Water and Energy Nexus,W2,0,0,0,0,20,0,Lecture,In Person Learning,Leslie Lavkulich
+GRS_V 390-A_103,GRS_V,390,A_103,Undergraduate,Open,Global Issues in Cultural Context,W2,4,0,0,4,10,0,Lecture,In Person Learning,Leslie Lavkulich
+GRS_V 390-A_IX3,GRS_V,390,A_IX3,Undergraduate,Open,Global Issues in Cultural Context,W2,4,0,0,4,10,0,Independent Study,In Person Learning,
+GRS_V 397-A_002,GRS_V,397,A_002,Undergraduate,Closed,Regional Directed Field Studies,W2,0,0,0,0,0,0,Independent Study,In Person Learning,Leslie Lavkulich
+GRS_V 397-B_004,GRS_V,397,B_004,Undergraduate,Closed,Regional Directed Field Studies,W2,0,0,0,0,0,0,Independent Study,In Person Learning,Leslie Lavkulich
+GRS_V 490-103,GRS_V,490,103,Undergraduate,Open,Global Issues in Cultural Context,W2,5,0,0,5,10,0,Lecture,In Person Learning,Leslie Lavkulich
+GRS_V 490-106,GRS_V,490,106,Undergraduate,Open,Global Issues in Cultural Context,W2,5,0,0,5,20,0,Independent Study,In Person Learning,Leslie Lavkulich
+GRS_V 497-B_002,GRS_V,497,B_002,Undergraduate,Closed,Regional Directed Field Studies,W2,0,0,0,0,0,0,Independent Study,In Person Learning,Leslie Lavkulich
+HUNU_V 515-001,HUNU_V,515,001,Graduate,Open,Business & Entrepreneurship in Dietetics,W2,11,0,0,11,15,0,Lecture,In Person Learning,Karen Taylor
+HUNU_V 525-002,HUNU_V,525,002,Graduate,Closed,Indigenous Health in Dietetics,W2,15,0,0,15,15,0,Lecture,In Person Learning,Tabitha Robin
+HUNU_V 531-002,HUNU_V,531,002,Graduate,Open,M.Sc. Seminar,W2,2,0,0,2,30,0,Seminar,In Person Learning,Crystal Dawn Karakochuk
+HUNU_V 540-001,HUNU_V,540,001,Graduate,Closed,Advances in Food Theory and Applications,W2,15,0,0,15,15,0,Lecture,In Person Learning,Anna Brisco
+HUNU_V 540-E01,HUNU_V,540,E01,Graduate,Closed,Advances in Food Theory and Applications,W2,15,0,0,15,15,0,Experiential,In Person Learning,Anna Brisco
+HUNU_V 545-001,HUNU_V,545,001,Graduate,Closed,Counselling Skills in Dietetics,W2,15,0,0,15,15,0,Lecture,In Person Learning,
+HUNU_V 547-B_002,HUNU_V,547,B_002,Graduate,Closed,Directed Studies,W2,0,0,0,0,0,0,Independent Study,In Person Learning,
+HUNU_V 549-002,HUNU_V,549,002,Graduate,Open,M.Sc. Thesis,W2,4,0,0,4,40,0,Thesis,In Person Learning,
+HUNU_V 573-002,HUNU_V,573,002,Graduate,Closed,Population and Public Health Dietetics,W2,15,0,0,15,15,0,Lecture,In Person Learning,Anna Brisco
+HUNU_V 575-001,HUNU_V,575,001,Graduate,Closed,Nutrition Care I,W2,15,0,0,15,15,0,Lecture,In Person Learning,Bruna Donatti Castro Falci
+HUNU_V 577-002,HUNU_V,577,002,Graduate,Open,Nutrition Care III,W2,11,0,0,11,15,0,Lecture,In Person Learning,Bruna Donatti Castro Falci
+HUNU_V 577-D01,HUNU_V,577,D01,Graduate,Open,Nutrition Care III,W2,11,0,0,11,15,0,Discussion,In Person Learning,Bruna Donatti Castro Falci
+HUNU_V 580-002,HUNU_V,580,002,Graduate,Open,Professional Dietetic Practice II,W2,11,0,0,11,15,0,Lecture,In Person Learning,Anna Brisco
+HUNU_V 631-002,HUNU_V,631,002,Graduate,Open,Ph.D. Seminar,W2,0,0,0,0,30,0,Seminar,In Person Learning,Crystal Dawn Karakochuk
+HUNU_V 649-002,HUNU_V,649,002,Graduate,Open,Doctoral Dissertation,W2,0,0,0,0,20,0,Thesis,In Person Learning,
+LFS_V 101-201,LFS_V,101,201,Undergraduate,Open,Principles of Microeconomics with Applications to Land and Food Systems,W2,29,0,0,29,35,0,Lecture,In Person Learning,Karen Taylor
+LFS_V 101-D01,LFS_V,101,D01,Undergraduate,Open,Principles of Microeconomics with Applications to Land and Food Systems,W2,29,0,0,29,35,0,Discussion,In Person Learning,Karen Taylor
+LFS_V 150-002,LFS_V,150,002,Undergraduate,Waitlist,Scholarly Writing and Argumentation in Land and Food Systems,W2,30,0,28,30,30,35,Lecture,Hybrid Learning,Duff Roberts
+LFS_V 150-004,LFS_V,150,004,Undergraduate,Open,Scholarly Writing and Argumentation in Land and Food Systems,W2,26,2,5,28,30,35,Lecture,Hybrid Learning,Amelia Macrae
+LFS_V 150-007,LFS_V,150,007,Undergraduate,Waitlist,Scholarly Writing and Argumentation in Land and Food Systems,W2,30,0,7,30,30,10,Lecture,Online Learning,Candice Rideout
+LFS_V 150-008,LFS_V,150,008,Undergraduate,Waitlist,Scholarly Writing and Argumentation in Land and Food Systems,W2,30,0,4,30,30,30,Lecture,Hybrid Learning,Duff Roberts
+LFS_V 150-201,LFS_V,150,201,Undergraduate,Open,Scholarly Writing and Argumentation in Land and Food Systems,W2,27,0,0,27,28,0,Lecture,In Person Learning,Lindsay Cuff
+LFS_V 252-002,LFS_V,252,002,Undergraduate,Waitlist,"Land, Food, and Community: Quantitative Data Analysis",W2,105,0,61,105,105,80,Lecture,Hybrid Learning,Michael Johnson
+LFS_V 252-003,LFS_V,252,003,Undergraduate,Waitlist,"Land, Food, and Community: Quantitative Data Analysis",W2,105,0,21,105,105,80,Lecture,Hybrid Learning,Michael Johnson
+LFS_V 252-D01,LFS_V,252,D01,Undergraduate,Closed,"Land, Food, and Community: Quantitative Data Analysis",W2,21,0,0,21,21,0,Discussion,Hybrid Learning,Michael Johnson
+LFS_V 252-D02,LFS_V,252,D02,Undergraduate,Closed,"Land, Food, and Community: Quantitative Data Analysis",W2,21,0,0,21,21,0,Discussion,Hybrid Learning,Michael Johnson
+LFS_V 252-D03,LFS_V,252,D03,Undergraduate,Closed,"Land, Food, and Community: Quantitative Data Analysis",W2,21,0,0,21,21,0,Discussion,Hybrid Learning,Michael Johnson
+LFS_V 252-D04,LFS_V,252,D04,Undergraduate,Closed,"Land, Food, and Community: Quantitative Data Analysis",W2,21,0,0,21,21,0,Discussion,Hybrid Learning,Michael Johnson
+LFS_V 252-D05,LFS_V,252,D05,Undergraduate,Closed,"Land, Food, and Community: Quantitative Data Analysis",W2,21,0,0,21,21,0,Discussion,Hybrid Learning,Michael Johnson
+LFS_V 252-D06,LFS_V,252,D06,Undergraduate,Closed,"Land, Food, and Community: Quantitative Data Analysis",W2,21,0,0,21,21,0,Discussion,Hybrid Learning,Michael Johnson
+LFS_V 252-D07,LFS_V,252,D07,Undergraduate,Closed,"Land, Food, and Community: Quantitative Data Analysis",W2,21,0,0,21,21,0,Discussion,Hybrid Learning,Michael Johnson
+LFS_V 252-D08,LFS_V,252,D08,Undergraduate,Closed,"Land, Food, and Community: Quantitative Data Analysis",W2,21,0,0,21,21,0,Discussion,Hybrid Learning,Michael Johnson
+LFS_V 252-D09,LFS_V,252,D09,Undergraduate,Closed,"Land, Food, and Community: Quantitative Data Analysis",W2,21,0,0,21,21,0,Discussion,Hybrid Learning,Michael Johnson
+LFS_V 252-D10,LFS_V,252,D10,Undergraduate,Closed,"Land, Food, and Community: Quantitative Data Analysis",W2,21,0,0,21,21,0,Discussion,Hybrid Learning,Michael Johnson
+LFS_V 302-A_002,LFS_V,302,A_002,Undergraduate,Closed,International Field Studies,W2,0,0,0,0,0,0,Experiential,In Person Learning,
+LFS_V 340-001,LFS_V,340,001,Undergraduate,Open,First Nations Health and the Traditional Role of Plants,W2,26,0,0,26,30,0,Lecture,In Person Learning,"Alannah Young
+
+Dana Hunter"
+LFS_V 350-002,LFS_V,350,002,Undergraduate,Closed,"Land, Food, and Community II: Principles and Practice of Community Food Security",W2,28,0,25,28,30,25,Lecture,In Person Learning,William Valley
+LFS_V 398-002,LFS_V,398,002,Undergraduate,Open,Co-operative Work Placement I,W2,11,0,0,11,50,0,Experiential,In Person Learning,
+LFS_V 399-002,LFS_V,399,002,Undergraduate,Open,Co-operative Work Placement II,W2,14,0,0,14,50,0,Experiential,In Person Learning,
+LFS_V 400-001,LFS_V,400,001,Undergraduate,Open,Audio Storytelling,W2,18,0,0,18,24,0,Lecture,In Person Learning,"Duncan McHugh
+
+Juli Carrillo"
+LFS_V 400-L01,LFS_V,400,L01,Undergraduate,Open,Audio Storytelling,W2,18,0,0,18,24,0,Laboratory,In Person Learning,"Duncan McHugh
+
+Juli Carrillo"
+LFS_V 450-001,LFS_V,450,001,Undergraduate,Open,"Land, Food, and Community III: Leadership in Campus Food System Sustainability",W2,36,0,0,36,40,0,Lecture,In Person Learning,Liska Richer
+LFS_V 496-A_002,LFS_V,496,A_002,Undergraduate,Closed,Career Development Practicum,W2,0,0,0,0,0,0,Experiential,In Person Learning,Andrew Riseman
+LFS_V 496-B_002,LFS_V,496,B_002,Undergraduate,Closed,Career Development Practicum,W2,0,0,0,0,0,0,Experiential,In Person Learning,Andrew Riseman
+LFS_V 498-002,LFS_V,498,002,Undergraduate,Open,Co-operative Work Placement III,W2,17,0,0,17,50,0,Experiential,In Person Learning,
+LFS_V 499-002,LFS_V,499,002,Undergraduate,Open,Co-operative Work Placement IV,W2,1,0,0,1,50,0,Experiential,In Person Learning,
+LFS_V 530-A_002,LFS_V,530,A_002,Graduate,Closed,Directed Studies,W2,0,0,0,0,0,0,Independent Study,In Person Learning,
+LFS_V 549-002,LFS_V,549,002,Graduate,Closed,Master's Thesis,W2,0,0,0,0,0,0,Thesis,In Person Learning,
+LFS_V 649-002,LFS_V,649,002,Graduate,Closed,Doctoral Dissertation,W2,1,0,0,1,0,0,Thesis,In Person Learning,
+LWS_V 525-002,LWS_V,525,002,Graduate,Open,Global Issues in Land and Water Systems,W2,19,0,0,19,30,0,Lecture,In Person Learning,Leslie Lavkulich
+LWS_V 530-A_002,LWS_V,530,A_002,Graduate,Closed,Directed Studies in Land and Water Systems,W2,0,0,0,0,0,0,Independent Study,In Person Learning,
+LWS_V 530-B_002,LWS_V,530,B_002,Graduate,Closed,Directed Studies in Land and Water Systems,W2,0,0,0,0,0,0,Independent Study,In Person Learning,
+LWS_V 530-C_002,LWS_V,530,C_002,Graduate,Closed,Directed Studies in Land and Water Systems,W2,0,0,0,0,0,0,Independent Study,In Person Learning,
+LWS_V 548-002,LWS_V,548,002,Graduate,Open,Major Project,W2,0,0,0,0,10,0,Independent Study,In Person Learning,
+LWS_V 550-002,LWS_V,550,002,Graduate,Open,Professional Communications Strategies,W2,25,0,0,25,30,0,Lecture,In Person Learning,Julie Wilson
+PLNT_V 505-002,PLNT_V,505,002,Graduate,Open,Plant-Water Relations for Sustainable Agriculture,W2,1,0,0,1,10,0,Lecture,In Person Learning,Thorsten Knipfer
+PLNT_V 523-002,PLNT_V,523,002,Graduate,Open,Graduate Research Seminar,W2,2,0,0,2,45,0,Seminar,In Person Learning,"Juli Carrillo
+
+Thorsten Knipfer"
+PLNT_V 530-B_002,PLNT_V,530,B_002,Graduate,Closed,Directed Studies,W2,0,0,0,0,0,0,Independent Study,In Person Learning,
+PLNT_V 530-B_LX2,PLNT_V,530,B_LX2,Graduate,Closed,Directed Studies,W2,0,0,0,0,0,0,Lecture,In Person Learning,
+PLNT_V 530-F_002,PLNT_V,530,F_002,Graduate,Closed,Directed Studies,W2,0,0,0,0,0,0,Independent Study,In Person Learning,
+PLNT_V 530-F_LX2,PLNT_V,530,F_LX2,Graduate,Closed,Directed Studies,W2,0,0,0,0,0,0,Lecture,In Person Learning,
+PLNT_V 549-A_002,PLNT_V,549,A_002,Graduate,Open,Master's Thesis,W2,1,0,0,1,18,0,Thesis,In Person Learning,
+PLNT_V 590-B_002,PLNT_V,590,B_002,Graduate,Preliminary,Advanced Topics in Plant Science,W2,0,0,0,0,0,0,Lecture,In Person Learning,
+PLNT_V 649-002,PLNT_V,649,002,Graduate,Open,Doctoral Dissertation,W2,3,0,0,3,13,0,Thesis,In Person Learning,
+SOIL_V 500-002,SOIL_V,500,002,Graduate,Open,Graduate Seminar,W2,2,0,0,2,30,0,Seminar,In Person Learning,Sandra Brown
+SOIL_V 502-002,SOIL_V,502,002,Graduate,Closed,Advanced Sustainable Soil Management,W2,5,0,0,5,5,0,Lecture,In Person Learning,"Maja Krzic
+
+Sandra Brown"
+SOIL_V 502-D02,SOIL_V,502,D02,Graduate,Closed,Advanced Sustainable Soil Management,W2,5,0,0,5,5,0,Discussion,In Person Learning,
+SOIL_V 530-B_002,SOIL_V,530,B_002,Graduate,Open,Directed Studies,W2,0,0,0,0,5,0,Independent Study,In Person Learning,Jean Thomas Cornelis
+SOIL_V 530-D_002,SOIL_V,530,D_002,Graduate,Open,Directed Studies,W2,0,0,0,0,5,0,Independent Study,In Person Learning,Jean Thomas Cornelis
+SOIL_V 549-002,SOIL_V,549,002,Graduate,Open,Master's Thesis,W2,0,0,0,0,5,0,Thesis,In Person Learning,Jean Thomas Cornelis
+SOIL_V 649-002,SOIL_V,649,002,Graduate,Open,Doctoral Dissertation,W2,1,0,0,1,5,0,Thesis,In Person Learning,Jean Thomas Cornelis
+AANB_V 500-003,AANB_V,500,003,Graduate,Open,Graduate Seminar,W1-2,4,0,0,4,20,0,Seminar,In Person Learning,Alexandra Protopopova
+AANB_V 504-001,AANB_V,504,001,Graduate,Closed,Research Methodology in Applied Animal Biology,W1,3,0,0,3,0,0,Lecture,In Person Learning,Daniel Weary
+AANB_V 530-A_001,AANB_V,530,A_001,Graduate,Closed,Directed Studies,W1,0,0,0,0,0,0,Independent Study,In Person Learning,
+AANB_V 530-A_003,AANB_V,530,A_003,Graduate,Closed,Directed Studies,W1-2,0,0,0,0,0,0,Independent Study,In Person Learning,
+AANB_V 530-B_001,AANB_V,530,B_001,Graduate,Closed,Directed Studies,W1,1,0,0,1,0,0,Independent Study,In Person Learning,
+AANB_V 530-B_003,AANB_V,530,B_003,Graduate,Closed,Directed Studies,W1-2,0,0,0,0,0,0,Independent Study,In Person Learning,
+AANB_V 530-C_001,AANB_V,530,C_001,Graduate,Closed,Directed Studies,W1,1,0,0,1,0,0,Independent Study,In Person Learning,
+AANB_V 530-C_003,AANB_V,530,C_003,Graduate,Closed,Directed Studies,W1-2,0,0,0,0,0,0,Independent Study,In Person Learning,
+AANB_V 549-A_001,AANB_V,549,A_001,Graduate,Open,Master's Thesis,W1,1,0,0,1,20,0,Thesis,In Person Learning,
+AANB_V 549-A_003,AANB_V,549,A_003,Graduate,Open,Master's Thesis,W1-2,2,0,0,2,20,0,Thesis,In Person Learning,
+AANB_V 549-B_001,AANB_V,549,B_001,Graduate,Open,Master's Thesis,W1,3,0,0,3,10,0,Thesis,In Person Learning,
+AANB_V 549-B_003,AANB_V,549,B_003,Graduate,Closed,Master's Thesis,W1-2,11,0,0,11,10,0,Thesis,In Person Learning,
+AANB_V 551-001,AANB_V,551,001,Graduate,Open,Tutorials in Animal Welfare Research,W1,1,0,0,1,10,0,Discussion,In Person Learning,
+AANB_V 649-001,AANB_V,649,001,Graduate,Open,Doctoral Dissertation,W1,3,0,0,3,20,0,Thesis,In Person Learning,
+AANB_V 649-003,AANB_V,649,003,Graduate,Closed,Doctoral Dissertation,W1-2,20,0,0,20,20,0,Thesis,In Person Learning,
+APBI_V 244-001,APBI_V,244,001,Undergraduate,Open,Atmospheric Environments,W1,55,0,0,55,60,0,Lecture,In Person Learning,Hojjatollah Yazdanpanah
+APBI_V 244-L01,APBI_V,244,L01,Undergraduate,Open,Atmospheric Environments,W1,9,0,0,9,10,0,Laboratory,In Person Learning,Hojjatollah Yazdanpanah
+APBI_V 244-L02,APBI_V,244,L02,Undergraduate,Closed,Atmospheric Environments,W1,10,0,0,10,10,0,Laboratory,In Person Learning,Hojjatollah Yazdanpanah
+APBI_V 244-L03,APBI_V,244,L03,Undergraduate,Open,Atmospheric Environments,W1,9,0,0,9,10,0,Laboratory,In Person Learning,Hojjatollah Yazdanpanah
+APBI_V 244-L04,APBI_V,244,L04,Undergraduate,Open,Atmospheric Environments,W1,7,0,0,7,10,0,Laboratory,In Person Learning,Hojjatollah Yazdanpanah
+APBI_V 244-L05,APBI_V,244,L05,Undergraduate,Open,Atmospheric Environments,W1,7,0,0,7,10,0,Laboratory,In Person Learning,Hojjatollah Yazdanpanah
+APBI_V 244-L06,APBI_V,244,L06,Undergraduate,Open,Atmospheric Environments,W1,13,0,0,13,15,0,Laboratory,In Person Learning,Hojjatollah Yazdanpanah
+APBI_V 260-001,APBI_V,260,001,Undergraduate,Open,Agroecology I: Introduction to principles and techniques,W1,38,0,0,38,48,0,Lecture,In Person Learning,"Raelani Kesler
+
+Sean Smukler"
+APBI_V 260-D01,APBI_V,260,D01,Undergraduate,Open,Agroecology I: Introduction to principles and techniques,W1,38,0,0,38,48,0,Discussion,In Person Learning,"Raelani Kesler
+
+Sean Smukler"
+APBI_V 260-L01,APBI_V,260,L01,Undergraduate,Open,Agroecology I: Introduction to principles and techniques,W1,38,0,0,38,48,0,Laboratory,In Person Learning,"Raelani Kesler
+
+Sean Smukler"
+APBI_V 290-001,APBI_V,290,001,Undergraduate,Open,Introductory Topics in Applied Biology,W1,18,0,0,18,50,0,Lecture,Hybrid Learning,Yasmin Akhtar
+APBI_V 290-002,APBI_V,290,002,Undergraduate,Open,Introductory Topics in Applied Biology,W1,29,0,0,29,33,0,Lecture,In Person Learning,Camila Cavalli
+APBI_V 312-001,APBI_V,312,001,Undergraduate,Open,Reproductive and Digestive Physiology,W1,47,0,0,47,50,10,Lecture,In Person Learning,Ronaldo Cerri
+APBI_V 313-001,APBI_V,313,001,Undergraduate,Waitlist,Experimental Analysis of Animal Behaviour,W1,40,0,0,40,40,7,Lecture,In Person Learning,Alexandra Protopopova
+APBI_V 314-001,APBI_V,314,001,Undergraduate,Preliminary,Animals and Society,W1,0,0,0,0,0,0,Lecture,In Person Learning,
+APBI_V 318-001,APBI_V,318,001,Undergraduate,Open,Applied Plant Breeding,W1,39,0,0,39,40,5,Lecture,Online Learning,Andrew Riseman
+APBI_V 319-001,APBI_V,319,001,Undergraduate,Open,Aquaculture and the Environment,W1,38,0,0,38,40,3,Lecture,In Person Learning,Andrea Frommel
+APBI_V 324-001,APBI_V,324,001,Undergraduate,Closed,Introduction to Seed Plant Taxonomy,W1,10,0,0,10,10,0,Lecture,In Person Learning,Quentin Charles Cronk
+APBI_V 324-L01,APBI_V,324,L01,Undergraduate,Closed,Introduction to Seed Plant Taxonomy,W1,5,0,0,5,5,0,Laboratory,In Person Learning,
+APBI_V 324-L02,APBI_V,324,L02,Undergraduate,Closed,Introduction to Seed Plant Taxonomy,W1,5,0,0,5,5,0,Laboratory,In Person Learning,
+APBI_V 327-001,APBI_V,327,001,Undergraduate,Open,Introduction to Entomology,W1,33,0,0,33,44,0,Lecture,Hybrid Learning,Yasmin Akhtar
+APBI_V 327-L01,APBI_V,327,L01,Undergraduate,Open,Introduction to Entomology,W1,7,0,0,7,11,0,Laboratory,In Person Learning,Yasmin Akhtar
+APBI_V 327-L02,APBI_V,327,L02,Undergraduate,Closed,Introduction to Entomology,W1,11,0,0,11,11,0,Laboratory,In Person Learning,Yasmin Akhtar
+APBI_V 327-L03,APBI_V,327,L03,Undergraduate,Open,Introduction to Entomology,W1,7,0,0,7,11,0,Laboratory,In Person Learning,Yasmin Akhtar
+APBI_V 327-L04,APBI_V,327,L04,Undergraduate,Open,Introduction to Entomology,W1,8,0,0,8,11,0,Laboratory,In Person Learning,Yasmin Akhtar
+APBI_V 328-001,APBI_V,328,001,Undergraduate,Open,Weed Science,W1,28,0,0,28,45,0,Lecture,In Person Learning,Vanessa Jones
+APBI_V 328-L01,APBI_V,328,L01,Undergraduate,Open,Weed Science,W1,14,0,0,14,20,0,Laboratory,In Person Learning,
+APBI_V 328-L02,APBI_V,328,L02,Undergraduate,Open,Weed Science,W1,14,0,0,14,20,0,Laboratory,In Person Learning,
+APBI_V 351-101,APBI_V,351,101,Undergraduate,Open,Plant Physiology,W1,10,0,0,10,12,5,Lecture,In Person Learning,Shawn Mansfield
+APBI_V 351-L01,APBI_V,351,L01,Undergraduate,Closed,Plant Physiology,W1,3,0,0,3,3,0,Laboratory,In Person Learning,Santokh Singh
+APBI_V 351-L02,APBI_V,351,L02,Undergraduate,Open,Plant Physiology,W1,2,0,0,2,3,0,Laboratory,In Person Learning,Santokh Singh
+APBI_V 351-L03,APBI_V,351,L03,Undergraduate,Closed,Plant Physiology,W1,3,0,0,3,3,0,Laboratory,In Person Learning,Santokh Singh
+APBI_V 351-L04,APBI_V,351,L04,Undergraduate,Open,Plant Physiology,W1,2,0,0,2,3,0,Laboratory,In Person Learning,Santokh Singh
+APBI_V 398-001,APBI_V,398,001,Undergraduate,Open,Research Methods in Applied Biology,W1,28,0,0,28,30,10,Lecture,In Person Learning,Marina von Keyserlingk
+APBI_V 401-001,APBI_V,401,001,Undergraduate,Waitlist,Soil Processes,W1,25,0,0,25,25,10,Lecture,In Person Learning,Jean Thomas Cornelis
+APBI_V 403-001,APBI_V,403,001,Undergraduate,Open,"Soil Sampling, Analyses and Data Interpretation",W1,19,0,0,19,20,0,Lecture,In Person Learning,"Akshit Puri
+
+Jean Thomas Cornelis
+
+Sandra Brown"
+APBI_V 403-L01,APBI_V,403,L01,Undergraduate,Open,"Soil Sampling, Analyses and Data Interpretation",W1,19,0,0,19,20,0,Laboratory,In Person Learning,
+APBI_V 406-001,APBI_V,406,001,Undergraduate,Open,Pollination Biology,W1,0,0,0,0,30,0,Lecture,In Person Learning,Risa Sargent
+APBI_V 410-002,APBI_V,410,002,Undergraduate,Open,Applied Animal Health and Physiology,W1,12,0,0,12,26,0,Lecture,In Person Learning,Ronaldo Cerri
+APBI_V 414-001,APBI_V,414,001,Undergraduate,Open,Animals and Global Issues,W1,21,0,0,21,32,0,Lecture,Hybrid Learning,Amelia Macrae
+APBI_V 416-001,APBI_V,416,001,Undergraduate,Preliminary,Compassionate Conservation,W1,0,0,0,0,40,0,Lecture,Hybrid Learning,Kristen Walker
+APBI_V 422-001,APBI_V,422,001,Undergraduate,Open,Indigenous Food Systems in Canada,W1,34,0,0,34,37,10,Lecture,In Person Learning,Tabitha Robin
+APBI_V 426-001,APBI_V,426,001,Undergraduate,Closed,Plant-Microbe Interactions,W1,10,0,0,10,10,0,Lecture,In Person Learning,James Kronstad
+APBI_V 426-T01,APBI_V,426,T01,Undergraduate,Closed,Plant-Microbe Interactions,W1,10,0,0,10,10,0,Discussion,In Person Learning,James Kronstad
+APBI_V 427-101,APBI_V,427,101,Undergraduate,Preliminary,Insect Ecology,W1,0,0,0,0,0,0,Lecture,In Person Learning,
+APBI_V 427-201,APBI_V,427,201,Undergraduate,Preliminary,Insect Ecology,W1,0,0,0,0,0,0,Lecture,In Person Learning,
+APBI_V 440-001,APBI_V,440,001,Undergraduate,Open,Plant Genomics,W1,0,0,0,0,15,0,Lecture,In Person Learning,Liang Song
+APBI_V 442-001,APBI_V,442,001,Undergraduate,Preliminary,Wine Grape and Berry Biology,W1,0,0,0,0,40,0,Lecture,In Person Learning,Simone Castellarin
+APBI_V 444-001,APBI_V,444,001,Undergraduate,Open,Agroforestry,W1,25,0,0,25,40,0,Lecture,In Person Learning,Teresa Ryan
+APBI_V 444-101,APBI_V,444,101,Undergraduate,Preliminary,Agroforestry,W1,0,0,0,0,0,0,Lecture,In Person Learning,
+APBI_V 460-001,APBI_V,460,001,Undergraduate,Open,Agroecology III: Synthesis and evaluation,W1,20,0,0,20,35,0,Lecture,Online Learning,Andrew Riseman
+APBI_V 465-001,APBI_V,465,001,Undergraduate,Closed,Capstone in Sustainable Agriculture and Food Systems,W1,4,0,0,4,4,0,Experiential,In Person Learning,
+APBI_V 490-B_102,APBI_V,490,B_102,Undergraduate,Preliminary,Advanced Topics in Applied Biology,W1,0,0,0,0,0,0,Lecture,In Person Learning,
+APBI_V 490-C_103,APBI_V,490,C_103,Undergraduate,Preliminary,Advanced Topics in Applied Biology,W1,0,0,0,0,0,0,Lecture,In Person Learning,
+APBI_V 490-F_104,APBI_V,490,F_104,Undergraduate,Closed,Advanced Topics in Applied Biology,W1,10,0,0,10,0,0,Lecture,In Person Learning,Jean Thomas Cornelis
+APBI_V 490-H_106,APBI_V,490,H_106,Undergraduate,Open,Advanced Topics in Applied Biology,W1,23,0,0,23,25,0,Lecture,In Person Learning,Andrea Frommel
+APBI_V 496-A_001,APBI_V,496,A_001,Undergraduate,Closed,Applied Animal Biology Practicum,W1,3,0,0,3,0,0,Experiential,In Person Learning,Sara Dubois
+APBI_V 496-A_003,APBI_V,496,A_003,Undergraduate,Closed,Applied Animal Biology Practicum,W1-2,1,0,0,1,0,0,Experiential,In Person Learning,Sara Dubois
+APBI_V 496-B_001,APBI_V,496,B_001,Undergraduate,Closed,Applied Animal Biology Practicum,W1,3,0,0,3,0,0,Experiential,In Person Learning,Sara Dubois
+APBI_V 496-B_003,APBI_V,496,B_003,Undergraduate,Closed,Applied Animal Biology Practicum,W1-2,0,0,0,0,0,0,Experiential,In Person Learning,Sara Dubois
+APBI_V 497-A_001,APBI_V,497,A_001,Undergraduate,Closed,Directed Studies,W1,0,0,0,0,0,0,Independent Study,In Person Learning,
+APBI_V 497-B_001,APBI_V,497,B_001,Undergraduate,Closed,Directed Studies,W1,2,0,0,2,0,0,Independent Study,In Person Learning,
+APBI_V 497-C_001,APBI_V,497,C_001,Undergraduate,Closed,Directed Studies,W1,0,0,0,0,0,0,Independent Study,In Person Learning,
+APBI_V 497-D_001,APBI_V,497,D_001,Undergraduate,Closed,Directed Studies,W1,0,0,0,0,0,0,Independent Study,In Person Learning,
+APBI_V 497-E_001,APBI_V,497,E_001,Undergraduate,Closed,Directed Studies,W1-2,1,0,0,1,0,0,Independent Study,In Person Learning,
+APBI_V 497-E_101,APBI_V,497,E_101,Undergraduate,Closed,Directed Studies,W1,0,0,0,0,0,0,Independent Study,In Person Learning,
+APBI_V 498-001,APBI_V,498,001,Undergraduate,Closed,Undergraduate Essay,W1-2,0,0,0,0,0,0,Independent Study,In Person Learning,
+APBI_V 498-101,APBI_V,498,101,Undergraduate,Closed,Undergraduate Essay,W1-2,0,0,0,0,0,0,Seminar,In Person Learning,
+APBI_V 499-001,APBI_V,499,001,Undergraduate,Closed,Undergraduate Thesis,W1-2,7,0,0,7,0,0,Thesis,In Person Learning,
+APBI_V 499-101,APBI_V,499,101,Undergraduate,Closed,Undergraduate Thesis,W1,0,0,0,0,0,0,Thesis,In Person Learning,
+AQUA_V 505-001,AQUA_V,505,001,Graduate,Open,Ecological Sustainability of Aquaculture,W1,3,0,0,3,15,0,Lecture,In Person Learning,Andrea Frommel
+FNH_V 160-101,FNH_V,160,101,Undergraduate,Open,Integrated Physiology for Human Nutrition I,W1,124,0,0,124,125,45,Lecture,In Person Learning,Elizabeth Novak
+FNH_V 200-101,FNH_V,200,101,Undergraduate,Open,Exploring Our Food,W1,148,0,0,148,150,50,Lecture,In Person Learning,Azita Madadi Noei
+FNH_V 200-102,FNH_V,200,102,Undergraduate,Open,Exploring Our Food,W1,90,0,0,90,100,50,Lecture,In Person Learning,Tianxi Yang
+FNH_V 200-105,FNH_V,200,105,Undergraduate,Open,Exploring Our Food,W1,88,0,0,88,100,40,Lecture,Online Learning,Derek Dee
+FNH_V 250-001,FNH_V,250,001,Undergraduate,Open,Nutrition Concepts and Controversies,W1,121,0,0,121,150,30,Lecture,In Person Learning,Gail Hammond
+FNH_V 250-102,FNH_V,250,102,Undergraduate,Preliminary,Nutrition Concepts and Controversies,W1,0,0,0,0,0,0,Lecture,In Person Learning,
+FNH_V 300-001,FNH_V,300,001,Undergraduate,Open,Food Engineering,W1,37,0,0,37,50,10,Lecture,In Person Learning,Shahabaddine Sokhansanj
+FNH_V 300-D01,FNH_V,300,D01,Undergraduate,Open,Food Engineering,W1,37,0,0,37,50,0,Discussion,In Person Learning,Shahabaddine Sokhansanj
+FNH_V 301-001,FNH_V,301,001,Undergraduate,Open,Food Chemistry,W1,32,0,0,32,50,0,Lecture,In Person Learning,"David Kitts
+
+Vasileios Kontogiorgos"
+FNH_V 301-D01,FNH_V,301,D01,Undergraduate,Open,Food Chemistry,W1,32,0,0,32,50,0,Discussion,In Person Learning,"David Kitts
+
+Vasileios Kontogiorgos"
+FNH_V 302-101,FNH_V,302,101,Undergraduate,Open,Food Analysis,W1,35,0,0,35,55,0,Lecture,In Person Learning,Tianxi Yang
+FNH_V 302-D01,FNH_V,302,D01,Undergraduate,Open,Food Analysis,W1,35,0,0,35,55,0,Discussion,In Person Learning,Tianxi Yang
+FNH_V 313-001,FNH_V,313,001,Undergraduate,Open,Food Microbiology,W1,239,0,0,239,240,35,Lecture,Multi-access Learning,Patricia Hingston
+FNH_V 325-001,FNH_V,325,001,Undergraduate,Closed,Food Science Laboratory I,W1,15,0,0,15,15,0,Laboratory,In Person Learning,Patricia Hingston
+FNH_V 325-002,FNH_V,325,002,Undergraduate,Closed,Food Science Laboratory I,W1,15,0,0,15,15,0,Laboratory,In Person Learning,Patricia Hingston
+FNH_V 330-001,FNH_V,330,001,Undergraduate,Open,Introduction to Wine Science I,W1,179,0,0,179,200,80,Lecture,Multi-access Learning,Jay Martiniuk
+FNH_V 330-L1A,FNH_V,330,L1A,Undergraduate,Open,Introduction to Wine Science I,W1,24,0,0,24,25,0,Laboratory,In Person Learning,Jay Martiniuk
+FNH_V 330-L1B,FNH_V,330,L1B,Undergraduate,Open,Introduction to Wine Science I,W1,23,0,0,23,25,0,Laboratory,In Person Learning,Jay Martiniuk
+FNH_V 330-L1C,FNH_V,330,L1C,Undergraduate,Open,Introduction to Wine Science I,W1,23,0,0,23,25,0,Laboratory,In Person Learning,Jay Martiniuk
+FNH_V 330-L1D,FNH_V,330,L1D,Undergraduate,Open,Introduction to Wine Science I,W1,20,0,0,20,25,0,Laboratory,In Person Learning,Jay Martiniuk
+FNH_V 330-L1E,FNH_V,330,L1E,Undergraduate,Open,Introduction to Wine Science I,W1,21,0,0,21,25,0,Laboratory,In Person Learning,Jay Martiniuk
+FNH_V 330-L1F,FNH_V,330,L1F,Undergraduate,Open,Introduction to Wine Science I,W1,19,0,0,19,25,0,Laboratory,In Person Learning,Jay Martiniuk
+FNH_V 330-L1G,FNH_V,330,L1G,Undergraduate,Open,Introduction to Wine Science I,W1,24,0,0,24,25,0,Laboratory,In Person Learning,Jay Martiniuk
+FNH_V 330-L1H,FNH_V,330,L1H,Undergraduate,Closed,Introduction to Wine Science I,W1,25,0,0,25,25,0,Laboratory,In Person Learning,Jay Martiniuk
+FNH_V 342-001,FNH_V,342,001,Undergraduate,Open,Critical Perspectives on Consumer Food Practices,W1,70,0,0,70,78,15,Lecture,In Person Learning,"Gerry Kasten
+
+Jennifer Black"
+FNH_V 350-001,FNH_V,350,001,Undergraduate,Open,Fundamentals of Nutrition,W1,106,0,0,106,150,20,Lecture,In Person Learning,Barbara Stefanska
+FNH_V 351-001,FNH_V,351,001,Undergraduate,Open,"Vitamins, Minerals, and Health",W1,99,0,0,99,124,20,Lecture,Hybrid Learning,Eleah Stringer
+FNH_V 351-IX1,FNH_V,351,IX1,Undergraduate,Open,"Vitamins, Minerals, and Health",W1,99,0,0,99,124,0,Independent Study,In Person Learning,
+FNH_V 355-001,FNH_V,355,001,Undergraduate,Open,International Nutrition,W1,223,0,0,223,250,75,Lecture,Online Learning,Candice Rideout
+FNH_V 370-001,FNH_V,370,001,Undergraduate,Open,Nutrition Assessment,W1,133,0,0,133,150,30,Lecture,In Person Learning,Gail Hammond
+FNH_V 380-001,FNH_V,380,001,Undergraduate,Open,Professional Dietetic Practice I,W1,51,0,0,51,55,0,Lecture,In Person Learning,Tamara Cohen
+FNH_V 398-001,FNH_V,398,001,Undergraduate,Open,Research Methods in Human Nutrition,W1,108,0,0,108,120,20,Lecture,In Person Learning,Mahsa Jessri
+FNH_V 398-D01,FNH_V,398,D01,Undergraduate,Open,Research Methods in Human Nutrition,W1,108,0,0,108,120,0,Discussion,Online Learning,Mahsa Jessri
+FNH_V 401-001,FNH_V,401,001,Undergraduate,Open,Advances in Plant and Cell-Based Foods,W1,17,0,0,17,30,0,Lecture,In Person Learning,Derek Dee
+FNH_V 401-D01,FNH_V,401,D01,Undergraduate,Open,Advances in Plant and Cell-Based Foods,W1,0,0,0,0,30,0,Lecture,In Person Learning,
+FNH_V 403-001,FNH_V,403,001,Undergraduate,Waitlist,"Food Laws, Regulations and Quality Assurance",W1,85,0,0,85,85,25,Lecture,In Person Learning,Nancy Ross
+FNH_V 403-D01,FNH_V,403,D01,Undergraduate,Closed,"Food Laws, Regulations and Quality Assurance",W1,43,0,0,43,43,0,Discussion,In Person Learning,Nancy Ross
+FNH_V 403-D02,FNH_V,403,D02,Undergraduate,Open,"Food Laws, Regulations and Quality Assurance",W1,42,0,0,42,43,0,Discussion,In Person Learning,Nancy Ross
+FNH_V 405-101,FNH_V,405,101,Undergraduate,Open,Microbiology of Food and Beverage Fermentation,W1,27,0,0,27,30,0,Lecture,Multi-access Learning,Jay Martiniuk
+FNH_V 413-001,FNH_V,413,001,Undergraduate,Open,Food Safety,W1,48,0,0,48,50,10,Lecture,In Person Learning,"Danielle Schultze
+
+Siyun Wang Kazun"
+FNH_V 413-D01,FNH_V,413,D01,Undergraduate,Open,Food Safety,W1,48,0,0,48,50,0,Discussion,In Person Learning,"Danielle Schultze
+
+Siyun Wang Kazun"
+FNH_V 414-101,FNH_V,414,101,Undergraduate,Open,Sustainability in the Food Industry,W1,27,0,0,27,30,0,Lecture,In Person Learning,Alberto Mendoza
+FNH_V 415-001,FNH_V,415,001,Undergraduate,Open,"Business Concepts in Food, Nutrition, and Health",W1,91,0,0,91,99,10,Lecture,In Person Learning,Karen Taylor
+FNH_V 425-001,FNH_V,425,001,Undergraduate,Open,Food Science Laboratory III,W1-2,21,0,0,21,30,0,Laboratory,In Person Learning,Patricia Hingston
+FNH_V 440-001,FNH_V,440,001,Undergraduate,Open,Food Service Systems Management,W1,35,0,0,35,40,0,Lecture,In Person Learning,Anna Brisco
+FNH_V 440-E01,FNH_V,440,E01,Undergraduate,Open,Food Service Systems Management,W1,35,0,0,35,40,0,Experiential,In Person Learning,Anna Brisco
+FNH_V 470-001,FNH_V,470,001,Undergraduate,Open,Nutrition Care II,W1,35,0,0,35,40,0,Lecture,In Person Learning,Bruna Donatti Castro Falci
+FNH_V 472-001,FNH_V,472,001,Undergraduate,Open,Maternal and Fetal Nutrition,W1,54,0,0,54,60,20,Lecture,In Person Learning,Rajavel Elango
+FNH_V 482-201,FNH_V,482,201,Undergraduate,Open,Dietetics Practice Education Placement III,W1,35,0,0,35,40,0,Experiential,In Person Learning,"Gordon Ly
+
+Kara Vogt
+
+Tamar Kafka"
+FNH_V 482-202,FNH_V,482,202,Undergraduate,Open,Dietetics Practice Education Placement III,W1,0,0,0,0,40,0,Experiential,In Person Learning,"Gordon Ly
+
+Kara Vogt
+
+Tamar Kafka"
+FNH_V 490-001,FNH_V,490,001,Undergraduate,Closed,"Advanced Topics in Food, Nutrition, and Health",W1,0,0,0,0,0,0,Lecture,In Person Learning,Derek Dee
+FNH_V 490-D01,FNH_V,490,D01,Undergraduate,Open,"Advanced Topics in Food, Nutrition, and Health",W1,0,0,0,0,30,0,Discussion,In Person Learning,
+FNH_V 497-A_101,FNH_V,497,A_101,Undergraduate,Closed,"Directed Studies in Food, Nutrition and Health",W1,0,0,0,0,0,0,Independent Study,In Person Learning,David Wright
+FNH_V 497-B_101,FNH_V,497,B_101,Undergraduate,Closed,"Directed Studies in Food, Nutrition and Health",W1,4,0,0,4,0,0,Independent Study,In Person Learning,David Wright
+FNH_V 497-E_001,FNH_V,497,E_001,Undergraduate,Closed,"Directed Studies in Food, Nutrition and Health",W1-2,0,0,0,0,0,0,Independent Study,In Person Learning,David Wright
+FNH_V 497-E_101,FNH_V,497,E_101,Undergraduate,Closed,"Directed Studies in Food, Nutrition and Health",W1,0,0,0,0,0,0,Independent Study,In Person Learning,David Wright
+FNH_V 499-001,FNH_V,499,001,Undergraduate,Closed,Undergraduate Thesis,W1-2,4,0,0,4,0,0,Thesis,In Person Learning,David Wright
+FNH_V 499-101,FNH_V,499,101,Undergraduate,Closed,Undergraduate Thesis,W1,0,0,0,0,0,0,Thesis,In Person Learning,David Wright
+FOOD_V 500-001,FOOD_V,500,001,Graduate,Open,M.Sc. Seminar,W1,1,0,0,1,30,0,Seminar,In Person Learning,John Frostad
+FOOD_V 500-003,FOOD_V,500,003,Graduate,Open,M.Sc. Seminar,W1-2,13,0,0,13,30,0,Seminar,In Person Learning,Vivien Measday
+FOOD_V 510-001,FOOD_V,510,001,Graduate,Open,Advances in Food Science,W1,11,0,0,11,25,0,Lecture,In Person Learning,"Azita Madadi Noei
+
+Jerzy Zawistowski"
+FOOD_V 511-002,FOOD_V,511,002,Graduate,Open,Master of Food Science Workshops,W1-2,30,0,0,30,45,0,Workshop,In Person Learning,Azita Madadi Noei
+FOOD_V 512-001,FOOD_V,512,001,Graduate,Open,Hazard Analysis and Critical Control Point and Food Safety Management,W1,30,0,0,30,45,0,Lecture,In Person Learning,Nancy Ross
+FOOD_V 521-001,FOOD_V,521,001,Graduate,Open,Advances in Food Biotechnology,W1,19,0,0,19,30,0,Lecture,In Person Learning,"Simone Castellarin
+
+Vivien Measday"
+FOOD_V 521-LXT,FOOD_V,521,LXT,Graduate,Open,Advances in Food Biotechnology,W1,19,0,0,19,30,0,Laboratory,In Person Learning,
+FOOD_V 525-001,FOOD_V,525,001,Graduate,Closed,Advances in Food Toxicology,W1,30,0,0,30,30,0,Lecture,In Person Learning,David Kitts
+FOOD_V 528-001,FOOD_V,528,001,Graduate,Open,International Food Laws and Regulations,W1,31,0,0,31,50,0,Lecture,In Person Learning,Jerzy Zawistowski
+FOOD_V 530-A_001,FOOD_V,530,A_001,Graduate,Closed,Directed Studies,W1,0,0,0,0,0,0,Independent Study,In Person Learning,
+FOOD_V 530-A_003,FOOD_V,530,A_003,Graduate,Closed,Directed Studies,W1-2,0,0,0,0,0,0,Independent Study,In Person Learning,
+FOOD_V 530-B_001,FOOD_V,530,B_001,Graduate,Closed,Directed Studies,W1,0,0,0,0,0,0,Independent Study,In Person Learning,
+FOOD_V 530-B_003,FOOD_V,530,B_003,Graduate,Closed,Directed Studies,W1-2,0,0,0,0,0,0,Independent Study,In Person Learning,
+FOOD_V 530-D_003,FOOD_V,530,D_003,Graduate,Closed,Directed Studies,W1-2,0,0,0,0,0,0,Independent Study,In Person Learning,
+FOOD_V 549-A_001,FOOD_V,549,A_001,Graduate,Open,Master's Thesis,W1,1,0,0,1,20,0,Thesis,In Person Learning,
+FOOD_V 549-A_003,FOOD_V,549,A_003,Graduate,Open,Master's Thesis,W1-2,12,0,0,12,20,0,Thesis,In Person Learning,
+FOOD_V 600-001,FOOD_V,600,001,Graduate,Open,Ph.D. Seminar,W1,2,0,0,2,30,0,Seminar,In Person Learning,John Frostad
+FOOD_V 600-003,FOOD_V,600,003,Graduate,Open,Ph.D. Seminar,W1-2,13,0,0,13,30,0,Seminar,In Person Learning,Vivien Measday
+FOOD_V 649-001,FOOD_V,649,001,Graduate,Open,Doctoral Dissertation,W1,0,0,0,0,20,0,Thesis,In Person Learning,
+FOOD_V 649-003,FOOD_V,649,003,Graduate,Open,Doctoral Dissertation,W1-2,15,0,0,15,20,0,Thesis,In Person Learning,
+FRE_V 306-001,FRE_V,306,001,Undergraduate,Open,Introduction to Global Food Markets,W1,33,0,0,33,75,0,Lecture,In Person Learning,Karen Taylor
+FRE_V 326-001,FRE_V,326,001,Undergraduate,Open,Empirical Methods for Food and Resource Economics,W1,12,0,0,12,40,0,Lecture,In Person Learning,Michael Johnson
+FRE_V 340-001,FRE_V,340,001,Undergraduate,Open,International Agricultural Development,W1,24,0,0,24,55,0,Lecture,In Person Learning,Sean Holowaychuk
+FRE_V 374-001,FRE_V,374,001,Undergraduate,Open,Land and Resource Economics,W1,74,0,0,74,75,10,Lecture,In Person Learning,Frederik Noack
+FRE_V 394-101,FRE_V,394,101,Undergraduate,Open,"Environment, Society and Government",W1,3,0,0,3,5,0,Lecture,In Person Learning,Isaac Holloway
+FRE_V 394-103,FRE_V,394,103,Undergraduate,Open,"Environment, Society and Government",W1,4,0,0,4,5,0,Lecture,In Person Learning,Steven Minns
+FRE_V 490-001,FRE_V,490,001,Undergraduate,Open,Current Issues in Food and Resource Economics,W1,13,0,0,13,40,0,Lecture,In Person Learning,Sean Holowaychuk
+FRE_V 490-LXT,FRE_V,490,LXT,Undergraduate,Open,Current Issues in Food and Resource Economics,W1,13,0,0,13,40,0,Laboratory,In Person Learning,Sean Holowaychuk
+FRE_V 500-001,FRE_V,500,001,Graduate,Open,MSc Seminar,W1,0,0,0,0,10,0,Seminar,In Person Learning,Frederik Noack
+FRE_V 500-003,FRE_V,500,003,Graduate,Open,MSc Seminar,W1-2,0,0,0,0,10,0,Seminar,In Person Learning,Frederik Noack
+FRE_V 501-001,FRE_V,501,001,Graduate,Open,Strategic Economic Analysis of Agri-Food Markets,W1,35,0,0,35,45,0,Lecture,In Person Learning,James Vercammen
+FRE_V 502-001,FRE_V,502,001,Graduate,Open,Food Market Analysis,W1,35,0,0,35,45,0,Lecture,In Person Learning,Carol McAusland
+FRE_V 516-001,FRE_V,516,001,Graduate,Open,Financial and Marketing Management in Agri-food Industries,W1,35,0,0,35,45,0,Lecture,In Person Learning,Kelleen Wiseman
+FRE_V 516-L01,FRE_V,516,L01,Graduate,Open,Financial and Marketing Management in Agri-food Industries,W1,35,0,0,35,45,0,Laboratory,In Person Learning,Kelleen Wiseman
+FRE_V 520-003,FRE_V,520,003,Graduate,Open,Professional Masters Seminar,W1-2,35,0,0,35,45,0,Seminar,In Person Learning,Kelleen Wiseman
+FRE_V 521-R_001,FRE_V,521,R_001,Graduate,Preliminary,Topics in Food and Resource Economics,W1,0,0,0,0,0,0,Lecture,In Person Learning,
+FRE_V 528-001,FRE_V,528,001,Graduate,Open,Applied Econometrics,W1,35,0,0,35,45,0,Lecture,In Person Learning,Michael Johnson
+FRE_V 528-L01,FRE_V,528,L01,Graduate,Open,Applied Econometrics,W1,35,0,0,35,45,0,Laboratory,In Person Learning,Michael Johnson
+FRE_V 547-101,FRE_V,547,101,Graduate,Open,Graduating Project,W1,1,0,0,1,2,0,Independent Study,In Person Learning,Kelleen Wiseman
+FRE_V 600-001,FRE_V,600,001,Graduate,Open,PhD Seminar,W1,0,0,0,0,10,0,Seminar,In Person Learning,Frederik Noack
+FRE_V 600-003,FRE_V,600,003,Graduate,Open,PhD Seminar,W1-2,4,0,0,4,10,0,Seminar,In Person Learning,Frederik Noack
+FRE_V 603-001,FRE_V,603,001,Graduate,Open,Advanced Food and Resource Economics,W1,5,0,0,5,15,0,Lecture,In Person Learning,Frederik Noack
+GRS_V 290-A_001,GRS_V,290,A_001,Undergraduate,Open,Global Issues in Cultural Context,W1-2,13,0,0,13,30,0,Lecture,In Person Learning,Leslie Lavkulich
+GRS_V 290-A_102,GRS_V,290,A_102,Undergraduate,Open,Global Issues in Cultural Context,W1-2,0,0,0,0,5,0,Lecture,In Person Learning,Leslie Lavkulich
+GRS_V 290-A_104,GRS_V,290,A_104,Undergraduate,Open,Global Issues in Cultural Context,W1-2,2,0,0,2,5,0,Lecture,In Person Learning,Leslie Lavkulich
+GRS_V 290-A_IX1,GRS_V,290,A_IX1,Undergraduate,Open,Global Issues in Cultural Context,W1-2,14,0,0,14,30,0,Independent Study,In Person Learning,
+GRS_V 290-A_IX2,GRS_V,290,A_IX2,Undergraduate,Open,Global Issues in Cultural Context,W1-2,0,0,0,0,5,0,Independent Study,In Person Learning,
+GRS_V 290-A_IX4,GRS_V,290,A_IX4,Undergraduate,Open,Global Issues in Cultural Context,W1-2,1,0,0,1,5,0,Independent Study,In Person Learning,
+GRS_V 390-A_001,GRS_V,390,A_001,Undergraduate,Open,Global Issues in Cultural Context,W1-2,14,0,0,14,20,0,Lecture,In Person Learning,Leslie Lavkulich
+GRS_V 390-A_102,GRS_V,390,A_102,Undergraduate,Closed,Global Issues in Cultural Context,W1-2,10,0,0,10,10,0,Lecture,In Person Learning,Leslie Lavkulich
+GRS_V 390-A_104,GRS_V,390,A_104,Undergraduate,Open,Global Issues in Cultural Context,W1-2,0,0,0,0,5,0,Lecture,In Person Learning,Leslie Lavkulich
+GRS_V 390-A_IX1,GRS_V,390,A_IX1,Undergraduate,Open,Global Issues in Cultural Context,W1-2,18,0,0,18,20,0,Independent Study,In Person Learning,
+GRS_V 390-A_IX2,GRS_V,390,A_IX2,Undergraduate,Open,Global Issues in Cultural Context,W1-2,4,0,0,4,10,0,Independent Study,In Person Learning,
+GRS_V 390-A_IX4,GRS_V,390,A_IX4,Undergraduate,Open,Global Issues in Cultural Context,W1-2,2,0,0,2,5,0,Independent Study,In Person Learning,
+GRS_V 397-A_001,GRS_V,397,A_001,Undergraduate,Closed,Regional Directed Field Studies,W1,0,0,0,0,0,0,Independent Study,In Person Learning,Leslie Lavkulich
+GRS_V 397-B_003,GRS_V,397,B_003,Undergraduate,Closed,Regional Directed Field Studies,W1,2,0,0,2,0,0,Independent Study,In Person Learning,Leslie Lavkulich
+GRS_V 490-001,GRS_V,490,001,Undergraduate,Open,Global Issues in Cultural Context,W1-2,10,0,0,10,15,0,Lecture,In Person Learning,Leslie Lavkulich
+GRS_V 490-102,GRS_V,490,102,Undergraduate,Open,Global Issues in Cultural Context,W1-2,4,0,0,4,10,0,Lecture,In Person Learning,Leslie Lavkulich
+GRS_V 490-104,GRS_V,490,104,Undergraduate,Open,Global Issues in Cultural Context,W1-2,10,0,0,10,20,0,Independent Study,In Person Learning,Leslie Lavkulich
+GRS_V 490-105,GRS_V,490,105,Undergraduate,Open,Global Issues in Cultural Context,W1-2,4,0,0,4,20,0,Independent Study,In Person Learning,Leslie Lavkulich
+GRS_V 497-B_001,GRS_V,497,B_001,Undergraduate,Closed,Regional Directed Field Studies,W1,3,0,0,3,0,0,Independent Study,In Person Learning,Leslie Lavkulich
+GRS_V 497-B_003,GRS_V,497,B_003,Undergraduate,Closed,Regional Directed Field Studies,W1-2,0,0,0,0,0,0,Independent Study,In Person Learning,Leslie Lavkulich
+GRS_V 497-E_101,GRS_V,497,E_101,Undergraduate,Closed,Regional Directed Field Studies,W1-2,3,0,0,3,0,0,Independent Study,In Person Learning,Leslie Lavkulich
+HUNU_V 500-001,HUNU_V,500,001,Graduate,Open,Research Methods in Human Nutrition,W1,21,0,0,21,25,0,Discussion,In Person Learning,"Mahsa Jessri
+
+Yvonne Lamers"
+HUNU_V 510-001,HUNU_V,510,001,Graduate,Closed,Nutrition Assessment Across the Lifespan,W1,15,0,0,15,15,0,Lecture,In Person Learning,Yvonne Lamers
+HUNU_V 531-001,HUNU_V,531,001,Graduate,Open,M.Sc. Seminar,W1,1,0,0,1,30,0,Seminar,In Person Learning,Crystal Dawn Karakochuk
+HUNU_V 531-003,HUNU_V,531,003,Graduate,Open,M.Sc. Seminar,W1-2,8,0,0,8,20,0,Seminar,In Person Learning,Crystal Dawn Karakochuk
+HUNU_V 541-001,HUNU_V,541,001,Graduate,Open,Food Provision and Management in Dietetics,W1,11,0,0,11,15,0,Lecture,In Person Learning,Anna Brisco
+HUNU_V 541-E01,HUNU_V,541,E01,Graduate,Open,Food Provision and Management in Dietetics,W1,11,0,0,11,15,0,Experiential,In Person Learning,Anna Brisco
+HUNU_V 547-B_001,HUNU_V,547,B_001,Graduate,Closed,Directed Studies,W1,0,0,0,0,0,0,Independent Study,In Person Learning,
+HUNU_V 547-B_003,HUNU_V,547,B_003,Graduate,Closed,Directed Studies,W1-2,0,0,0,0,0,0,Independent Study,In Person Learning,
+HUNU_V 547-E_003,HUNU_V,547,E_003,Graduate,Closed,Directed Studies,W1-2,1,0,0,1,0,0,Independent Study,In Person Learning,
+HUNU_V 549-001,HUNU_V,549,001,Graduate,Open,M.Sc. Thesis,W1,3,0,0,3,40,0,Thesis,In Person Learning,
+HUNU_V 549-003,HUNU_V,549,003,Graduate,Open,M.Sc. Thesis,W1-2,6,0,0,6,40,0,Thesis,In Person Learning,
+HUNU_V 550-001,HUNU_V,550,001,Graduate,Closed,Advances in Human Nutrition,W1,15,0,0,15,15,0,Lecture,In Person Learning,Bruna Donatti Castro Falci
+HUNU_V 550-D01,HUNU_V,550,D01,Graduate,Closed,Advances in Human Nutrition,W1,15,0,0,15,15,0,Discussion,In Person Learning,Bruna Donatti Castro Falci
+HUNU_V 560-001,HUNU_V,560,001,Graduate,Open,Leadership in Dietetics and Health,W1,11,0,0,11,15,0,Lecture,In Person Learning,"Nicole Spencer
+
+Raihan Hassen"
+HUNU_V 576-001,HUNU_V,576,001,Graduate,Open,Nutrition Care II,W1,11,0,0,11,15,0,Lecture,In Person Learning,Bruna Donatti Castro Falci
+HUNU_V 576-D01,HUNU_V,576,D01,Graduate,Open,Nutrition Care II,W1,11,0,0,11,15,0,Discussion,In Person Learning,Bruna Donatti Castro Falci
+HUNU_V 581-001,HUNU_V,581,001,Graduate,Open,Dietetics Practice Education Placement II,W1,11,0,0,11,15,0,Research,In Person Learning,Tamara Cohen
+HUNU_V 583-001,HUNU_V,583,001,Graduate,Open,Dietetics Practice Education Placement IV,W1,10,0,0,10,15,0,Experiential,Hybrid Learning,"Anna Brisco
+
+Bruna Donatti Castro Falci"
+HUNU_V 631-001,HUNU_V,631,001,Graduate,Open,Ph.D. Seminar,W1,1,0,0,1,30,0,Seminar,In Person Learning,Crystal Dawn Karakochuk
+HUNU_V 631-003,HUNU_V,631,003,Graduate,Open,Ph.D. Seminar,W1-2,12,0,0,12,30,0,Seminar,In Person Learning,Crystal Dawn Karakochuk
+HUNU_V 649-001,HUNU_V,649,001,Graduate,Open,Doctoral Dissertation,W1,1,0,0,1,20,0,Thesis,In Person Learning,
+HUNU_V 649-003,HUNU_V,649,003,Graduate,Open,Doctoral Dissertation,W1-2,11,0,0,11,20,0,Thesis,In Person Learning,
+LFS_V 100-001,LFS_V,100,001,Undergraduate,Open,"Introduction to Land, Food and Community",W1,143,0,0,143,145,0,Lecture,In Person Learning,Raelani Kesler
+LFS_V 100-002,LFS_V,100,002,Undergraduate,Open,"Introduction to Land, Food and Community",W1,110,0,0,110,145,0,Lecture,Online Learning,Raelani Kesler
+LFS_V 100-003,LFS_V,100,003,Undergraduate,Open,"Introduction to Land, Food and Community",W1,87,0,0,87,145,0,Lecture,Online Learning,Raelani Kesler
+LFS_V 100-XMT,LFS_V,100,XMT,Undergraduate,Closed,"Introduction to Land, Food and Community",W1,0,0,0,0,0,0,Lecture,Online Learning,
+LFS_V 110-101,LFS_V,110,101,Undergraduate,Open,Land One: First-year Integrative Seminar,W1-2,29,0,0,29,30,0,Lecture,In Person Learning,Fernanda Tomaselli
+LFS_V 110-L01,LFS_V,110,L01,Undergraduate,Open,Land One: First-year Integrative Seminar,W1-2,29,0,0,29,30,0,Laboratory,In Person Learning,Fernanda Tomaselli
+LFS_V 110-T01,LFS_V,110,T01,Undergraduate,Open,Land One: First-year Integrative Seminar,W1-2,29,0,0,29,30,0,Discussion,In Person Learning,Fernanda Tomaselli
+LFS_V 150-001,LFS_V,150,001,Undergraduate,Waitlist,Scholarly Writing and Argumentation in Land and Food Systems,W1,30,0,0,30,30,35,Lecture,Hybrid Learning,Lindsay Cuff
+LFS_V 150-003,LFS_V,150,003,Undergraduate,Waitlist,Scholarly Writing and Argumentation in Land and Food Systems,W1,30,0,0,30,30,35,Lecture,Hybrid Learning,Duff Roberts
+LFS_V 150-005,LFS_V,150,005,Undergraduate,Open,Scholarly Writing and Argumentation in Land and Food Systems,W1,29,0,0,29,30,35,Lecture,Online Learning,Amelia Macrae
+LFS_V 150-006,LFS_V,150,006,Undergraduate,Open,Scholarly Writing and Argumentation in Land and Food Systems,W1,26,0,0,26,30,35,Lecture,Hybrid Learning,Lindsay Cuff
+LFS_V 250-001,LFS_V,250,001,Undergraduate,Open,"Land, Food and Community I: Introduction to Food Systems and Sustainability",W1-2,201,0,0,201,210,100,Lecture,Online Learning,"Matthew Mitchell
+
+William Valley"
+LFS_V 250-002,LFS_V,250,002,Undergraduate,Open,"Land, Food and Community I: Introduction to Food Systems and Sustainability",W1-2,118,0,0,118,120,60,Lecture,Online Learning,Delisa Lewis
+LFS_V 250-003,LFS_V,250,003,Undergraduate,Open,"Land, Food and Community I: Introduction to Food Systems and Sustainability",W1-2,94,0,0,94,120,60,Lecture,Online Learning,Amber Heckelman
+LFS_V 250-004,LFS_V,250,004,Undergraduate,Closed,"Land, Food and Community I: Introduction to Food Systems and Sustainability",W1-2,3,0,0,3,0,0,Lecture,In Person Learning,"Matthew Mitchell
+
+William Valley"
+LFS_V 250-D01,LFS_V,250,D01,Undergraduate,Open,"Land, Food and Community I: Introduction to Food Systems and Sustainability",W1-2,177,0,0,177,210,0,Discussion,In Person Learning,"Matthew Mitchell
+
+William Valley"
+LFS_V 250-D02,LFS_V,250,D02,Undergraduate,Closed,"Land, Food and Community I: Introduction to Food Systems and Sustainability",W1-2,120,0,0,120,120,0,Discussion,Online Learning,Delisa Lewis
+LFS_V 250-D03,LFS_V,250,D03,Undergraduate,Open,"Land, Food and Community I: Introduction to Food Systems and Sustainability",W1-2,119,0,0,119,120,0,Discussion,Online Learning,Amber Heckelman
+LFS_V 250-LX1,LFS_V,250,LX1,Undergraduate,Open,"Land, Food and Community I: Introduction to Food Systems and Sustainability",W1-2,416,0,0,416,450,0,Laboratory,In Person Learning,
+LFS_V 302-A_001,LFS_V,302,A_001,Undergraduate,Closed,International Field Studies,W1,1,0,0,1,0,0,Experiential,In Person Learning,
+LFS_V 302-B_001,LFS_V,302,B_001,Undergraduate,Closed,International Field Studies,W1-2,0,0,0,0,0,0,Experiential,In Person Learning,
+LFS_V 350-001,LFS_V,350,001,Undergraduate,Waitlist,"Land, Food, and Community II: Principles and Practice of Community Food Security",W1,30,0,0,30,30,25,Lecture,In Person Learning,William Valley
+LFS_V 398-001,LFS_V,398,001,Undergraduate,Open,Co-operative Work Placement I,W1,17,0,0,17,50,0,Experiential,In Person Learning,
+LFS_V 398-003,LFS_V,398,003,Undergraduate,Open,Co-operative Work Placement I,W1-2,0,0,0,0,50,0,Experiential,In Person Learning,
+LFS_V 399-001,LFS_V,399,001,Undergraduate,Open,Co-operative Work Placement II,W1,33,0,0,33,50,0,Experiential,In Person Learning,
+LFS_V 399-003,LFS_V,399,003,Undergraduate,Open,Co-operative Work Placement II,W1-2,0,0,0,0,50,0,Experiential,In Person Learning,
+LFS_V 402-001,LFS_V,402,001,Undergraduate,Open,Living Language: Science and Society,W1,3,0,0,3,4,0,Lecture,Online Learning,"Bryan Gick
+
+Elena Nicoladis"
+LFS_V 496-A_001,LFS_V,496,A_001,Undergraduate,Closed,Career Development Practicum,W1,2,0,0,2,0,0,Experiential,In Person Learning,Andrew Riseman
+LFS_V 496-B_001,LFS_V,496,B_001,Undergraduate,Closed,Career Development Practicum,W1,2,0,0,2,0,0,Experiential,In Person Learning,Andrew Riseman
+LFS_V 496-B_003,LFS_V,496,B_003,Undergraduate,Closed,Career Development Practicum,W1-2,0,0,0,0,0,0,Experiential,In Person Learning,Andrew Riseman
+LFS_V 498-001,LFS_V,498,001,Undergraduate,Open,Co-operative Work Placement III,W1,6,0,0,6,50,0,Experiential,In Person Learning,
+LFS_V 498-003,LFS_V,498,003,Undergraduate,Open,Co-operative Work Placement III,W1-2,0,0,0,0,50,0,Experiential,In Person Learning,
+LFS_V 499-001,LFS_V,499,001,Undergraduate,Open,Co-operative Work Placement IV,W1,1,0,0,1,50,0,Experiential,In Person Learning,
+LFS_V 499-003,LFS_V,499,003,Undergraduate,Open,Co-operative Work Placement IV,W1-2,0,0,0,0,50,0,Experiential,In Person Learning,
+LFS_V 500-003,LFS_V,500,003,Graduate,Open,Graduate Seminar,W1-2,3,0,0,3,10,0,Seminar,Hybrid Learning,
+LFS_V 530-A_001,LFS_V,530,A_001,Graduate,Closed,Directed Studies,W1,0,0,0,0,0,0,Independent Study,In Person Learning,
+LFS_V 530-A_003,LFS_V,530,A_003,Graduate,Closed,Directed Studies,W1-2,0,0,0,0,0,0,Independent Study,In Person Learning,
+LFS_V 530-B_003,LFS_V,530,B_003,Graduate,Closed,Directed Studies,W1-2,0,0,0,0,0,0,Independent Study,In Person Learning,
+LFS_V 549-001,LFS_V,549,001,Graduate,Closed,Master's Thesis,W1,0,0,0,0,0,0,Thesis,In Person Learning,
+LFS_V 549-003,LFS_V,549,003,Graduate,Closed,Master's Thesis,W1-2,6,0,0,6,0,0,Thesis,In Person Learning,
+LFS_V 649-001,LFS_V,649,001,Graduate,Closed,Doctoral Dissertation,W1,0,0,0,0,0,0,Thesis,In Person Learning,
+LFS_V 649-003,LFS_V,649,003,Graduate,Closed,Doctoral Dissertation,W1-2,12,0,0,12,0,0,Thesis,In Person Learning,
+LWS_V 501-001,LWS_V,501,001,Graduate,Open,Advanced Soil Processes,W1,20,0,0,20,25,0,Lecture,In Person Learning,Jean Thomas Cornelis
+LWS_V 501-T01,LWS_V,501,T01,Graduate,Open,Advanced Soil Processes,W1,20,0,0,20,30,0,Discussion,In Person Learning,Jean Thomas Cornelis
+LWS_V 510-003,LWS_V,510,003,Graduate,Open,Land and Water Seminar,W1-2,22,0,0,22,28,0,Seminar,In Person Learning,Leslie Lavkulich
+LWS_V 515-001,LWS_V,515,001,Graduate,Open,Watershed Science,W1,15,0,0,15,25,0,Lecture,In Person Learning,Lewis Fausak
+LWS_V 516-001,LWS_V,516,001,Graduate,Closed,Urban Watershed Management,W1,20,0,0,20,20,0,Lecture,In Person Learning,Julie Wilson
+LWS_V 517-001,LWS_V,517,001,Graduate,Open,Land and Water Resource Evaluation,W1,22,0,0,22,28,0,Lecture,In Person Learning,Leslie Lavkulich
+LWS_V 530-A_001,LWS_V,530,A_001,Graduate,Closed,Directed Studies in Land and Water Systems,W1,0,0,0,0,0,0,Independent Study,In Person Learning,
+LWS_V 530-A_003,LWS_V,530,A_003,Graduate,Closed,Directed Studies in Land and Water Systems,W1-2,0,0,0,0,0,0,Independent Study,In Person Learning,
+LWS_V 530-B_001,LWS_V,530,B_001,Graduate,Closed,Directed Studies in Land and Water Systems,W1,0,0,0,0,0,0,Independent Study,In Person Learning,
+LWS_V 530-B_003,LWS_V,530,B_003,Graduate,Closed,Directed Studies in Land and Water Systems,W1-2,0,0,0,0,0,0,Independent Study,In Person Learning,
+LWS_V 530-C_001,LWS_V,530,C_001,Graduate,Closed,Directed Studies in Land and Water Systems,W1,0,0,0,0,0,0,Independent Study,In Person Learning,
+LWS_V 530-C_003,LWS_V,530,C_003,Graduate,Closed,Directed Studies in Land and Water Systems,W1-2,0,0,0,0,0,0,Independent Study,In Person Learning,
+LWS_V 548-001,LWS_V,548,001,Graduate,Open,Major Project,W1,0,0,0,0,25,0,Independent Study,In Person Learning,
+PLNT_V 523-001,PLNT_V,523,001,Graduate,Open,Graduate Research Seminar,W1,2,0,0,2,45,0,Seminar,In Person Learning,"Juli Carrillo
+
+Thorsten Knipfer"
+PLNT_V 523-003,PLNT_V,523,003,Graduate,Open,Graduate Research Seminar,W1-2,18,0,0,18,45,0,Seminar,In Person Learning,"Juli Carrillo
+
+Thorsten Knipfer"
+PLNT_V 530-B_001,PLNT_V,530,B_001,Graduate,Closed,Directed Studies,W1-2,1,0,0,1,0,0,Independent Study,In Person Learning,
+PLNT_V 530-B_003,PLNT_V,530,B_003,Graduate,Closed,Directed Studies,W1-2,0,0,0,0,0,0,Independent Study,In Person Learning,
+PLNT_V 530-B_LX1,PLNT_V,530,B_LX1,Graduate,Closed,Directed Studies,W1-2,1,0,0,1,0,0,Lecture,In Person Learning,
+PLNT_V 530-B_LX3,PLNT_V,530,B_LX3,Graduate,Closed,Directed Studies,W1-2,0,0,0,0,0,0,Lecture,In Person Learning,
+PLNT_V 530-D_003,PLNT_V,530,D_003,Graduate,Closed,Directed Studies,W1-2,0,0,0,0,0,0,Independent Study,In Person Learning,
+PLNT_V 530-D_LX1,PLNT_V,530,D_LX1,Graduate,Closed,Directed Studies,W1-2,0,0,0,0,0,0,Lecture,In Person Learning,
+PLNT_V 530-F_001,PLNT_V,530,F_001,Graduate,Closed,Directed Studies,W1-2,0,0,0,0,0,0,Independent Study,In Person Learning,
+PLNT_V 530-F_003,PLNT_V,530,F_003,Graduate,Closed,Directed Studies,W1-2,0,0,0,0,0,0,Independent Study,In Person Learning,
+PLNT_V 530-F_LX1,PLNT_V,530,F_LX1,Graduate,Closed,Directed Studies,W1-2,0,0,0,0,0,0,Lecture,In Person Learning,
+PLNT_V 530-F_LX3,PLNT_V,530,F_LX3,Graduate,Closed,Directed Studies,W1-2,0,0,0,0,0,0,Lecture,In Person Learning,
+PLNT_V 540-101,PLNT_V,540,101,Graduate,Open,Plant Molecular Biology Laboratory,W1,1,0,0,1,5,0,Laboratory,In Person Learning,David Ng
+PLNT_V 549-A_001,PLNT_V,549,A_001,Graduate,Open,Master's Thesis,W1,2,0,0,2,18,0,Thesis,In Person Learning,
+PLNT_V 549-A_003,PLNT_V,549,A_003,Graduate,Open,Master's Thesis,W1-2,3,0,0,3,18,0,Thesis,In Person Learning,
+PLNT_V 590-A_001,PLNT_V,590,A_001,Graduate,Open,Advanced Topics in Plant Science,W1,0,0,0,0,20,0,Lecture,In Person Learning,Thorsten Knipfer
+PLNT_V 590-F_001,PLNT_V,590,F_001,Graduate,Open,Advanced Topics in Plant Science,W1,0,0,0,0,10,0,Lecture,In Person Learning,Risa Sargent
+PLNT_V 649-001,PLNT_V,649,001,Graduate,Open,Doctoral Dissertation,W1,2,0,0,2,13,0,Thesis,In Person Learning,
+PLNT_V 649-003,PLNT_V,649,003,Graduate,Open,Doctoral Dissertation,W1-2,7,0,0,7,13,0,Thesis,In Person Learning,
+SOIL_V 500-001,SOIL_V,500,001,Graduate,Open,Graduate Seminar,W1,1,0,0,1,30,0,Seminar,In Person Learning,Sandra Brown
+SOIL_V 500-003,SOIL_V,500,003,Graduate,Open,Graduate Seminar,W1-2,11,0,0,11,30,0,Seminar,In Person Learning,Sandra Brown
+SOIL_V 501-001,SOIL_V,501,001,Graduate,Open,Advanced Soil Processes,W1,2,0,0,2,5,0,Lecture,In Person Learning,Jean Thomas Cornelis
+SOIL_V 501-T01,SOIL_V,501,T01,Graduate,Open,Advanced Soil Processes,W1,2,0,0,2,5,0,Discussion,In Person Learning,Jean Thomas Cornelis
+SOIL_V 503-001,SOIL_V,503,001,Graduate,Closed,"Advanced Soil Sampling, Analyses and Data Interpretation",W1,10,0,0,10,10,0,Lecture,In Person Learning,"Akshit Puri
+
+Jean Thomas Cornelis
+
+Sandra Brown"
+SOIL_V 503-D01,SOIL_V,503,D01,Graduate,Closed,"Advanced Soil Sampling, Analyses and Data Interpretation",W1,10,0,0,10,10,0,Discussion,In Person Learning,"Akshit Puri
+
+Jean Thomas Cornelis
+
+Sandra Brown"
+SOIL_V 503-L01,SOIL_V,503,L01,Graduate,Closed,"Advanced Soil Sampling, Analyses and Data Interpretation",W1,10,0,0,10,10,0,Laboratory,In Person Learning,
+SOIL_V 515-001,SOIL_V,515,001,Graduate,Open,Watershed Science,W1,3,0,0,3,5,0,Lecture,In Person Learning,Lewis Fausak
+SOIL_V 516-001,SOIL_V,516,001,Graduate,Closed,Urban Watershed Management,W1,5,0,0,5,5,0,Lecture,In Person Learning,Julie Wilson
+SOIL_V 517-001,SOIL_V,517,001,Graduate,Open,Land and Water Resource Evaluation,W1,3,0,0,3,10,0,Lecture,In Person Learning,
+SOIL_V 530-B_001,SOIL_V,530,B_001,Graduate,Open,Directed Studies,W1,4,0,0,4,5,0,Independent Study,In Person Learning,Jean Thomas Cornelis
+SOIL_V 530-B_003,SOIL_V,530,B_003,Graduate,Closed,Directed Studies,W1-2,1,0,0,1,0,0,Independent Study,In Person Learning,Jean Thomas Cornelis
+SOIL_V 530-D_001,SOIL_V,530,D_001,Graduate,Open,Directed Studies,W1,0,0,0,0,5,0,Independent Study,In Person Learning,
+SOIL_V 530-D_003,SOIL_V,530,D_003,Graduate,Closed,Directed Studies,W1-2,0,0,0,0,0,0,Independent Study,In Person Learning,Jean Thomas Cornelis
+SOIL_V 549-001,SOIL_V,549,001,Graduate,Open,Master's Thesis,W1,2,0,0,2,20,0,Thesis,In Person Learning,Jean Thomas Cornelis
+SOIL_V 549-003,SOIL_V,549,003,Graduate,Closed,Master's Thesis,W1-2,5,0,0,5,5,0,Thesis,In Person Learning,Jean Thomas Cornelis
+SOIL_V 649-001,SOIL_V,649,001,Graduate,Open,Doctoral Dissertation,W1,2,0,0,2,20,0,Thesis,In Person Learning,Jean Thomas Cornelis
+SOIL_V 649-003,SOIL_V,649,003,Graduate,Open,Doctoral Dissertation,W1-2,2,0,0,2,5,0,Thesis,In Person Learning,Jean Thomas Cornelis

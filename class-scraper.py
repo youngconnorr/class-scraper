@@ -65,31 +65,24 @@ major_content = {}
 
 def main():
     
+    """
+    TODO: GO TO XLS_FIXED_DATA AND REORAGNIZE!
+    
+    """
     
 
     
     
     """Find all major/course names"""
-    faculty_term_1 = get_faculty_classes(TERM1_CLASSES_LINK)
-    faculty_term_2 = get_faculty_classes(TERM2_CLASSES_LINK)
-    faculty_term_1.extend(faculty_term_2)
-    sorted_total = sorted(faculty_term_1)
-    ordered_total_classes = OrderedDict.fromkeys(sorted_total, None)
+    # faculty_term_1 = get_faculty_classes(TERM1_CLASSES_LINK)
+    # faculty_term_2 = get_faculty_classes(TERM2_CLASSES_LINK)
+    # faculty_term_1.extend(faculty_term_2)
+    # sorted_total = sorted(faculty_term_1)
+    # ordered_total_classes = OrderedDict.fromkeys(sorted_total, None)
     find_major_courses(PARENT_FACULTY_LINK)
     
-    """Create another custom script"""
-    # cur_csv = '24S_&_24W_All_LFS_Courses.csv'
-    # desired_fields = ['Course Section']
-    # pd_data = pd.read_csv(cur_csv, skipinitialspace=True, usecols=desired_fields, index_col=False)
-    
-    # cut_off = "-"
-    
-    # xls_course_list = pd_data['Course Section'].tolist()
-    # ordered_total_classes = [course[:course.find(cut_off)] for course in xls_course_list]
-    # ordered_total_classes = OrderedDict.fromkeys(xls_course_list, None)
-    
     """Match course titles from outside csv"""
-    # cur_csv = '24S_&_24W_All_LFS_Courses.csv'
+    # cur_csv = '/imported_sheets/24S_&_24W_All_LFS_Courses.csv'
     # desired_fields = ['Course Section', 'Section Title']
     # pd_data = pd.read_csv(cur_csv, skipinitialspace=True, usecols=desired_fields, index_col=False)
     # course_name_match = {}
@@ -116,12 +109,42 @@ def main():
     # output_csv = 'course_sections.csv'
     # df.to_csv(output_csv, index=False)
     
+    """Create custom course title names from different columns from csv"""
+    cur_csv = '24S_LFS_Courses.csv'
+    desired_fields = ['Subject', 'Course']
+    pd_data = pd.read_csv(cur_csv, skipinitialspace=True, usecols=desired_fields, index_col=False)
+    course_name_match = []
     
-    """Uncomment below to create whole Y, N, R list"""
+    for i in range(len(pd_data)):
+        subject = pd_data.iloc[i, 0]
+        course = pd_data.iloc[i, 1]
+        
+        course_name = str(subject) + "_V " + str(course)
+        course_name_match.append(course_name)
     
     
     restricted_courses = get_restricted_courses(VALID_CLASSES, RESTRICTED_COURSES_LINK)   
-    check_required_classes_or_restricted(major_content, ordered_total_classes, restricted_courses)
+    check_required_classes_or_restricted(major_content, course_name_match, restricted_courses)
+
+    
+    
+    """Custom Script to append to unique course list"""
+    # cur_csv = '24S_&_24W_All_LFS_Courses.csv'
+    # desired_fields = ['Course Section']
+    # pd_data = pd.read_csv(cur_csv, skipinitialspace=True, usecols=desired_fields, index_col=False)
+    
+    # cut_off = "-"
+    
+    # xls_course_list = pd_data['Course Section'].tolist()
+    # ordered_total_classes = [course[:course.find(cut_off)] for course in xls_course_list]
+    # ordered_total_classes = OrderedDict.fromkeys(xls_course_list, None)
+    
+    
+    """Uncomment below to create whole Y, N, R list"""
+
+    
+    # restricted_courses = get_restricted_courses(VALID_CLASSES, RESTRICTED_COURSES_LINK)   
+    # check_required_classes_or_restricted(major_content, ordered_total_classes, restricted_courses)
     
     
     # export_to_csv(ordered_total_classes, "new_xls.csv")
@@ -146,10 +169,7 @@ def check_required_classes_or_restricted(major_content: dict, faculty_classes: O
                 is_nutrition_exception = "Nutritional Sciences Major" in specialization and "Double Major" in r_program
                 is_food_econ = "Food and Resource" in major and "Food and Resource" in r_program
 
-                # Combine conditions
-                if is_food_econ:
-                    print("ECON MAJOR:", major)
-                    print("RESTRICTED MAJOR:", r_program)
+
                 if is_base_match or is_dual_degree_match or is_fnh_general_match:
                     if is_food_science_exception or is_nutrition_exception:
                         continue
@@ -162,7 +182,8 @@ def check_required_classes_or_restricted(major_content: dict, faculty_classes: O
                     course_pattern = re.compile(r'^[A-Z]+\s\d+') # regex to check valid class
                     extracted_r_courses = [course_pattern.search(course).group(0) for course in r_class if course_pattern.search(course)]
 
-                    for each_class in faculty_classes.keys():
+                    # add back .keys() for faculty classes
+                    for each_class in faculty_classes:
                         parsable_class = each_class.replace("_V", "")
                         if parsable_class in extracted_r_courses:
                             r_array.append('R')
@@ -170,7 +191,7 @@ def check_required_classes_or_restricted(major_content: dict, faculty_classes: O
                             r_array.append('N')
                         
                     
-                    for each_class in faculty_classes.keys():
+                    for each_class in faculty_classes:
                         if each_class in specialization_classes:
                             valid_class_array.append('Y')
                         else:
@@ -197,7 +218,7 @@ def check_required_classes_or_restricted(major_content: dict, faculty_classes: O
                 rows.append({"Major": major, "Specialization": specialization, "values" : value})
     
     df = pd.DataFrame(rows)
-    df.to_excel("xls_fixed_data.xlsx")
+    df.to_excel("24S_Class_YNR.xlsx")
     print("done")
 
 """
